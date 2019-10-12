@@ -1,2 +1,2 @@
 # Wyrd
-Decentralized DNS implementation for Medium and Yggdrasil
+Decentralized DNS implementation by Medium for Yggdrasil
