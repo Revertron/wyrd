@@ -40,4 +40,4 @@ Just add needed DNS-records to your zoneinfo like this:
     "name": "My meganode!",
   }
 ```
-Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um`.
+Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um` and `.dns`.
