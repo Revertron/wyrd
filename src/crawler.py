@@ -3,14 +3,18 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
+# version 0.1.0
+
 import MySQLdb
 import json
 import socket
 import sys
+import os
 import time
 import ipaddress
 import traceback
 import runpy
+import re
 from threading import Lock, Thread
 from queue import Queue
 
@@ -51,8 +55,8 @@ nodeinfomutex = Lock()
 nodeinfopool = ThreadPool(30)
 
 host_port = ('localhost', 9001)
-
 config = runpy.run_module("config")
+was_updated = False
 
 def recv_until_done(soc):
     all_data = []
@@ -113,30 +117,150 @@ def valid_ipv6_check(ipv6add):
         addr = False
     return addr
 
+def is_valid_domain(domain):
+    in_valid_zone = False
+    for zone in config["ZONES"]:
+        if domain.endswith(zone):
+            in_valid_zone = True
+            break
+
+    return in_valid_zone and re.match(r'^(?=.{4,255}$)([a-zA-Z0-9][a-zA-Z0-9-]{,61}[a-zA-Z0-9]\.)+[a-zA-Z0-9]{2,6}$', domain)
+
+def record_to_string(domain, record):
+    result = ""
+    if "ip" not in record and "data" not in record:
+        return result
+    data = ""
+    if "ip" in record:
+        data = record["ip"]
+    elif "data" in record:
+        data = record["data"]
+
+    pos = domain.rfind('.')
+    domain_name = domain[0:pos] if pos > -1 else ""
+    if len(domain_name) == 0:
+        return ""
+
+    name = record["name"] if "name" in record else "@"
+    ttl = record["ttl"] if "ttl" in record else 3600
+    type = record["type"] if "type" in record else "AAAA"
+    result = "%s\t%s\tIN\t%s\t%s" % (domain_name, ttl, type, data)
+    return result
+
+def get_valid_owner(ipv6, domain, dbconn):
+    print("Checking domain %s against IP %s..." % (domain, ipv6))
+    owner = ''
+    new_owner = ''
+    fallback_owner = ''
+    cur = dbconn.cursor()
+    cur.execute("SELECT owner, owner_new, owner_fallback FROM domains WHERE domain=%s;", (domain,))
+    for row in cur.fetchall():
+        owner = row[0]
+        new_owner = row[1]
+        fallback_owner = row[2]
+    cur.close()
+
+    if owner != '' and owner != ipv6 and ipv6 != new_owner:
+        return False
+    if owner == ipv6 or owner == '':
+        return ipv6
+    return False
+
+def get_dns_records(ipv6, dns, dbconn):
+    if "domains" not in dns:
+        return ""
+    domains = dns["domains"]
+    result = []
+
+    for d in domains:
+        records = []
+        if "domain" not in d:
+            print("Object does not contain domain field, ignoring")
+            continue
+        domain = d["domain"]
+        if not is_valid_domain(domain):
+            print("%s is not valid domain, ignoring" % domain)
+            continue
+        owner = get_valid_owner(ipv6, domain, dbconn)
+        if not owner or ipv6 != owner:
+            print("Wrong owner for domain %s: ipv6 is %s, but owner is %s" % (domain, ipv6, owner))
+            continue
+        if "records" not in d and "ip" in d:
+            print("%s does simple ip mode" % domain)
+            ip = d["ip"]
+            if ip and valid_ipv6_check(ip):
+                records.append("%s.\t3600\tIN\tAAAA\t%s" % (domain, ip))
+                result.append((domain, ipv6, records))
+            continue
+        if "records" not in d:
+           print("%s does not contain nor records nor ip, ignoring" % domain)
+           continue
+        for record in d["records"]:
+            r = record_to_string(domain, record)
+            if r:
+                records.append(r)
+        if records:
+            result.append((domain, ipv6, records))
+
+    return result
+
+def insert_new_records(records, dbconn):
+    was_updated = False
+    timestamp = str(int(time.time()))
+    cursor = dbconn.cursor()
+    for domain, ipv6, recs in records:
+        record_string = "\n".join(recs)
+        cursor.execute("SELECT records FROM domains WHERE domain=%s LIMIT 1;", (domain,))
+        for rec in cursor.fetchall():
+            if not rec[0] == record_string:
+                cursor.execute(
+                   "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
+                   (domain, ipv6, timestamp, record_string, ipv6, record_string)
+                )
+                was_updated = True
+                print("\nRecords updated:\n%s\n%s\n" % (rec[0], record_string));
+    cursor.close()
+    return was_updated
 
 def insert_new_entry(ipv6, coords):
+    global was_updated
     try:
         nodename = ""
         nodejson = "{}"
+        dns = ""
         if ipv6 in nodeinfo:
             with nodeinfomutex:
                 nodejson = json.dumps(nodeinfo[ipv6])
                 nodename = nodeinfo[ipv6]["name"] if "name" in nodeinfo[ipv6] else ""
+                dns = nodeinfo[ipv6]["dns"] if "dns" in nodeinfo[ipv6] else ""
+
         dbconn = MySQLdb.connect(host=config['DB_HOST'], db=config['DB_NAME'], user=config['DB_USER'], passwd=config['DB_PASSWORD'])
-        cur = dbconn.cursor()
-        cur.execute(
-            "INSERT INTO yggindex (ipv6, coords, unixtstamp, name) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE unixtstamp=%s, coords=%s, name=%s;",
-            (ipv6, coords, str(int(time.time())), nodename, str(int(time.time())), coords, nodename)
-        )
-        cur.execute(
-            "INSERT INTO yggnodeinfo (ipv6, nodeinfo, timestamp) VALUES(%s, %s, NOW()) ON DUPLICATE KEY UPDATE nodeinfo=%s, timestamp=NOW();",
-            (ipv6, nodejson, nodejson)
-        )
+        records = get_dns_records(ipv6, dns, dbconn)
+        if records:
+            print("Got records: %s" % records)
+            was_updated = insert_new_records(records, dbconn) or was_updated
+
         dbconn.commit()
-        cur.close()
         dbconn.close()
     except Exception as e:
-        print("database error inserting")
+        print("  Error inserting records from %s" % ipv6)
+        traceback.print_exc()
+
+def save_zone_info(path, zone):
+    try:
+        dbconn = MySQLdb.connect(host=config['DB_HOST'], db=config['DB_NAME'], user=config['DB_USER'], passwd=config['DB_PASSWORD'])
+        cursor = dbconn.cursor()
+        cursor.execute("SELECT records FROM domains WHERE domain LIKE %s;", ("%" + zone,))
+        lines = []
+        for rec in cursor.fetchall():
+            lines.append(rec[0])
+        data = "\n".join(lines)
+        # Saving to file
+        f = open(path, 'w')
+        f.write(data)
+        f.close()
+    except Exception as e:
+        print("  Error saving zone info '%s' to %s" % (zone, path))
         traceback.print_exc()
 
 def handleNodeInfo(address, data):
@@ -152,15 +276,12 @@ def handleNodeInfo(address, data):
             return
         if 'dns' in data['response']['nodeinfo']:
             print("DNS info:", data['response']['nodeinfo']['dns'])
-        #print("Adding nodeinfo for:", address)
         nodeinfo[str(address)] = data['response']['nodeinfo']
 
 def handleResponse(address, info, data):
     global visited
     global rumored
     global timedout
-
-    #print("handleResponse:", address, info, data)
 
     timedout[str(address)] = {'box_pub_key':str(info['box_pub_key']), 'coords':str(info['coords'])}
 
@@ -175,6 +296,7 @@ def handleResponse(address, info, data):
         rumored[addr] = rumor
     if address not in visited:
         visited[str(address)] = info['coords']
+        print("Visited", str(address))
     if address in timedout:
         del timedout[address]
 
@@ -198,9 +320,14 @@ while len(rumored) > 0:
 
 nodeinfopool.wait()
 
-print("Nodeinfopool is ready, nodeinfo length is", len(nodeinfo))
+print("\nNodeinfopool is ready, nodeinfo length is", len(nodeinfo))
 for x, y in visited.items():
     if valid_ipv6_check(x) and check_coords(y):
         insert_new_entry(x, y)
 
-print("Done.")
+print("Done with updating. Updated = %r" % was_updated)
+
+if was_updated:
+    for zone in config['ZONES']:
+        save_zone_info("/etc/bind/wyrd/db%s.records" % zone, zone)
+    os.system('/bin/systemctl reload bind9')

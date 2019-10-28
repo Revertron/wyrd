@@ -1,34 +1,18 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
-CREATE TABLE `yggindex` (
-  `ipv6` varchar(40) NOT NULL,
-  `coords` varchar(80) NOT NULL,
-  `unixtstamp` bigint(12) NOT NULL DEFAULT current_timestamp(),
-  `name` varchar(80) NOT NULL 
+CREATE TABLE domains (
+  domain varchar(100) NOT NULL,
+  owner varchar(40) NOT NULL,
+  owner_new varchar(40) DEFAULT NULL,
+  owner_fallback varchar(40) DEFAULT NULL,
+  legacy tinyint(1) NOT NULL DEFAULT 0,
+  seen_first bigint(12) NOT NULL,
+  seen_down_since bigint(12) NOT NULL DEFAULT 0,
+  tags varchar(100) DEFAULT NULL,
+  records text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `yggnodeinfo` (
-  `ipv6` varchar(40) NOT NULL,
-  `nodeinfo` text NOT NULL,
-  `timestamp` bigint(12) NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-ALTER TABLE `yggindex`
-  ADD UNIQUE KEY `ipv6` (`ipv6`);
-
-ALTER TABLE `yggnodeinfo`
-  ADD UNIQUE KEY `ipv6` (`ipv6`);
-
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ALTER TABLE domains
+  ADD UNIQUE KEY domain (domain);
