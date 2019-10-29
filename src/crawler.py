@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.0
+# version 0.1.1
 
 import MySQLdb
 import json
@@ -211,14 +211,23 @@ def insert_new_records(records, dbconn):
     for domain, ipv6, recs in records:
         record_string = "\n".join(recs)
         cursor.execute("SELECT records FROM domains WHERE domain=%s LIMIT 1;", (domain,))
-        for rec in cursor.fetchall():
-            if not rec[0] == record_string:
-                cursor.execute(
-                   "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
-                   (domain, ipv6, timestamp, record_string, ipv6, record_string)
-                )
-                was_updated = True
-                print("\nRecords updated:\n%s\n%s\n" % (rec[0], record_string));
+        old = cursor.fetchall()
+        if not old:
+            cursor.execute(
+               "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
+               (domain, ipv6, timestamp, record_string, ipv6, record_string)
+            )
+            was_updated = True
+            print("\nRecords added:\n%s\n" % (record_string));
+        else:
+            for rec in cursor.fetchall():
+                if not rec[0] == record_string:
+                    cursor.execute(
+                       "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
+                       (domain, ipv6, timestamp, record_string, ipv6, record_string)
+                    )
+                    was_updated = True
+                    print("\nRecords updated:\n%s\n%s\n" % (rec[0], record_string));
     cursor.close()
     return was_updated
 
@@ -254,7 +263,7 @@ def save_zone_info(path, zone):
         lines = []
         for rec in cursor.fetchall():
             lines.append(rec[0])
-        data = "\n".join(lines)
+        data = "\n".join(lines) + "\n"
         # Saving to file
         f = open(path, 'w')
         f.write(data)

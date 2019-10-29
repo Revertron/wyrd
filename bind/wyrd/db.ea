@@ -10,6 +10,6 @@ $TTL    3600
         IN      NS      ns2.dns.ygg.
 
 ns1.dns IN      AAAA    300:149b::53
-ns2.dns IN      AAAA    300:149b::35
+ns2.dns IN      AAAA    301:2923::53
 
 $INCLUDE /etc/bind/wyrd/db.ea.records
