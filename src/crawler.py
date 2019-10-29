@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.1
+# version 0.1.2
 
 import MySQLdb
 import json
@@ -231,6 +231,18 @@ def insert_new_records(records, dbconn):
     cursor.close()
     return was_updated
 
+def check_owner_transfers(ipv6, dns, dbconn):
+    if "domains" not in dns:
+        return
+    for domain in dns["domains"]:
+        if "owner" in domain:
+            name = domain["domain"]
+            owner = domain["owner"]
+            print("Changing owner of %s from %s to %s" % (name, ipv6, owner))
+            cursor = dbconn.cursor()
+            cursor.execute("UPDATE domains SET owner=%s WHERE domain=%s AND owner=%s;", (owner, name, ipv6))
+            cursor.close()
+
 def insert_new_entry(ipv6, coords):
     global was_updated
     try:
@@ -242,12 +254,15 @@ def insert_new_entry(ipv6, coords):
                 nodejson = json.dumps(nodeinfo[ipv6])
                 nodename = nodeinfo[ipv6]["name"] if "name" in nodeinfo[ipv6] else ""
                 dns = nodeinfo[ipv6]["dns"] if "dns" in nodeinfo[ipv6] else ""
+                if not dns:
+                    return
 
         dbconn = MySQLdb.connect(host=config['DB_HOST'], db=config['DB_NAME'], user=config['DB_USER'], passwd=config['DB_PASSWORD'])
         records = get_dns_records(ipv6, dns, dbconn)
         if records:
             print("Got records: %s" % records)
             was_updated = insert_new_records(records, dbconn) or was_updated
+        was_updated = check_owner_transfers(ipv6, dns, dbconn) or was_updated
 
         dbconn.commit()
         dbconn.close()
