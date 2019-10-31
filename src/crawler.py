@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.2
+# version 0.1.3
 
 import MySQLdb
 import json
@@ -145,6 +145,7 @@ def record_to_string(domain, record):
     ttl = record["ttl"] if "ttl" in record else 3600
     type = record["type"] if "type" in record else "AAAA"
     result = "%s\t%s\tIN\t%s\t%s" % (domain_name, ttl, type, data)
+    print("Got record:", result)
     return result
 
 def get_valid_owner(ipv6, domain, dbconn):
@@ -220,7 +221,7 @@ def insert_new_records(records, dbconn):
             was_updated = True
             print("\nRecords added:\n%s\n" % (record_string));
         else:
-            for rec in cursor.fetchall():
+            for rec in old:
                 if not rec[0] == record_string:
                     cursor.execute(
                        "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
@@ -233,7 +234,7 @@ def insert_new_records(records, dbconn):
 
 def check_owner_transfers(ipv6, dns, dbconn):
     if "domains" not in dns:
-        return
+        return False
     for domain in dns["domains"]:
         if "owner" in domain:
             name = domain["domain"]
@@ -242,6 +243,8 @@ def check_owner_transfers(ipv6, dns, dbconn):
             cursor = dbconn.cursor()
             cursor.execute("UPDATE domains SET owner=%s WHERE domain=%s AND owner=%s;", (owner, name, ipv6))
             cursor.close()
+            return True
+    return False
 
 def insert_new_entry(ipv6, coords):
     global was_updated
@@ -260,7 +263,7 @@ def insert_new_entry(ipv6, coords):
         dbconn = MySQLdb.connect(host=config['DB_HOST'], db=config['DB_NAME'], user=config['DB_USER'], passwd=config['DB_PASSWORD'])
         records = get_dns_records(ipv6, dns, dbconn)
         if records:
-            print("Got records: %s" % records)
+            #print("Got records: %s" % records)
             was_updated = insert_new_records(records, dbconn) or was_updated
         was_updated = check_owner_transfers(ipv6, dns, dbconn) or was_updated
 
