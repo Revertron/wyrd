@@ -1,6 +1,10 @@
 # Wyrd
 Decentralized DNS implementation by Medium for Yggdrasil
 
+Working servers are here: `301:2522::53` and `301:2923::53`, feel free to use :)
+
+How to add your domain to those servers? Easy!
+
 Just add needed DNS-records to your zoneinfo like this:
 
 ```
@@ -40,4 +44,4 @@ Just add needed DNS-records to your zoneinfo like this:
     "name": "My meganode!",
   }
 ```
-Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um` and `.dns`.
+Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um` and `.dns`. If the community will need some more, we can add some.
