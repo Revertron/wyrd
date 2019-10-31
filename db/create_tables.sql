@@ -4,8 +4,7 @@ SET time_zone = "+00:00";
 CREATE TABLE domains (
   domain varchar(100) NOT NULL,
   owner varchar(40) NOT NULL,
-  owner_new varchar(40) DEFAULT NULL,
-  owner_fallback varchar(40) DEFAULT NULL,
+  fallback varchar(40) DEFAULT NULL,
   legacy tinyint(1) NOT NULL DEFAULT 0,
   seen_first bigint(12) NOT NULL,
   seen_down_since bigint(12) NOT NULL DEFAULT 0,

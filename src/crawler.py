@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.3
+# version 0.1.4
 
 import MySQLdb
 import json
@@ -154,14 +154,13 @@ def get_valid_owner(ipv6, domain, dbconn):
     new_owner = ''
     fallback_owner = ''
     cur = dbconn.cursor()
-    cur.execute("SELECT owner, owner_new, owner_fallback FROM domains WHERE domain=%s;", (domain,))
+    cur.execute("SELECT owner, fallback FROM domains WHERE domain=%s;", (domain,))
     for row in cur.fetchall():
         owner = row[0]
-        new_owner = row[1]
-        fallback_owner = row[2]
+        fallback = row[1]
     cur.close()
 
-    if owner != '' and owner != ipv6 and ipv6 != new_owner:
+    if owner != '' and owner != ipv6 and ipv6 != fallback:
         return False
     if owner == ipv6 or owner == '':
         return ipv6
