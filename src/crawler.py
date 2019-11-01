@@ -141,10 +141,15 @@ def record_to_string(domain, record):
     if len(domain_name) == 0:
         return ""
 
-    name = record["name"] if "name" in record else "@"
-    ttl = record["ttl"] if "ttl" in record else 3600
+    name = record["name"] if "name" in record else domain_name
+    if name == "@":
+        name = domain_name
+    ttl = record["ttl"] if "ttl" in record else 300
     type = record["type"] if "type" in record else "AAAA"
-    result = "%s\t%s\tIN\t%s\t%s" % (domain_name, ttl, type, data)
+    if name == domain_name:
+        result = "%s\t%s\tIN\t%s\t%s" % (domain_name, ttl, type, data)
+    else:
+        result = "%s\t%s\tIN\t%s\t%s" % (name + "." + domain_name, ttl, type, data)
     print("Got record:", result)
     return result
 

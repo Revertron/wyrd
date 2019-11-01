@@ -1,5 +1,5 @@
 $TTL    3600
-@       IN      SOA     dns.ygg admin@dns.ygg (
+@       IN      SOA     dns.ygg. admin.dns.ygg. (
                         1       ; serial
                         3600    ; time to refresh
                         600     ; time to retry
@@ -9,7 +9,7 @@ $TTL    3600
         IN      NS      ns1.dns.ygg.
         IN      NS      ns2.dns.ygg.
 
-ns1.dns IN      AAAA    300:149b::53
-ns2.dns IN      AAAA    301:2923::53
+ns1.dns IN      AAAA    301:2923::53
+ns2.dns IN      AAAA    301:2522::53
 
 $INCLUDE /etc/bind/wyrd/db.um.records
