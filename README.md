@@ -62,11 +62,13 @@ How to add your domain to those servers? Easy! Just add needed DNS-records to yo
 Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um`, `.hub` and `.dns`. If the community will need some more, we can add some.
 
 ## Installation
-1. You need to have installed python3 and python3-mysqldb. For example: `apt-get install python3 python3-mysqldb`.
+1. You need to have installed bind9, python3 and python3-mysqldb. For example: `apt-get install bind9 python3 python3-mysqldb`.
 2. Clone this repository
 3. Create a database `wyrd`, user `wyrd` and give this user all privileges for this DB.
-4. Change a password in `src/config.py`
-5. Run it by python3 `src/crawler.py`
+4. Copy all contains in `bind` directory to `/etc/bind/`
+5. Change a password in `src/config.py`
+6. Run it by `python3 src/crawler.py`
+7. It would be great to add it to the cron, like for every 15 minutes
 
 ## Synchronization
 You can ask - what if I run it on my server, and get some domain from already ignored squatter, not from legitimate owner?
