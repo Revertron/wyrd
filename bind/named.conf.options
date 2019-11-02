@@ -21,5 +21,6 @@ options {
 	dnssec-validation auto;
 
 	listen-on-v6 { any; };
-        recursion no;
+	allow-recursion { "none"; };
+	recursion no;
 };
