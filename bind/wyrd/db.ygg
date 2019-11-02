@@ -1,15 +1,15 @@
-$TTL	3600
+$TTL	300
 @	IN	SOA	dns.ygg. admin.dns.ygg. (
-			4	; serial
+			1	; serial
 			3600	; time to refresh
-			600	; time to retry
+			300	; time to retry
 			604800	; time to expire
-			3600)	; minimum ttl
+			60)	; minimum ttl
 
 	IN	NS	ns1.dns.ygg.
 	IN	NS	ns2.dns.ygg.
 
-ns1.dns IN      AAAA    301:2923::53
-ns2.dns IN      AAAA    301:2522::53
+ns1.dns IN	AAAA	301:2923::53
+ns2.dns IN	AAAA	301:2522::53
 
-$INCLUDE /etc/bind/wyrd/db.ygg.records
+$INCLUDE /etc/bind/wyrd/db.um.records

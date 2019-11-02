@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.4
+# version 0.1.5
 
 import MySQLdb
 import json
@@ -56,7 +56,6 @@ nodeinfopool = ThreadPool(30)
 
 host_port = ('localhost', 9001)
 config = runpy.run_module("config")
-was_updated = False
 
 def recv_until_done(soc):
     all_data = []
@@ -210,7 +209,6 @@ def get_dns_records(ipv6, dns, dbconn):
     return result
 
 def insert_new_records(records, dbconn):
-    was_updated = False
     timestamp = str(int(time.time()))
     cursor = dbconn.cursor()
     for domain, ipv6, recs in records:
@@ -222,7 +220,6 @@ def insert_new_records(records, dbconn):
                "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
                (domain, ipv6, timestamp, record_string, ipv6, record_string)
             )
-            was_updated = True
             print("\nRecords added:\n%s\n" % (record_string));
         else:
             for rec in old:
@@ -231,10 +228,8 @@ def insert_new_records(records, dbconn):
                        "INSERT INTO domains (domain, owner, seen_first, records) VALUES(%s, %s, %s, %s) ON DUPLICATE KEY UPDATE owner=%s, records=%s;",
                        (domain, ipv6, timestamp, record_string, ipv6, record_string)
                     )
-                    was_updated = True
                     print("\nRecords updated:\n%s\n%s\n" % (rec[0], record_string));
     cursor.close()
-    return was_updated
 
 def check_owner_transfers(ipv6, dns, dbconn):
     if "domains" not in dns:
@@ -251,7 +246,6 @@ def check_owner_transfers(ipv6, dns, dbconn):
     return False
 
 def insert_new_entry(ipv6, coords):
-    global was_updated
     try:
         nodename = ""
         nodejson = "{}"
@@ -268,14 +262,38 @@ def insert_new_entry(ipv6, coords):
         records = get_dns_records(ipv6, dns, dbconn)
         if records:
             #print("Got records: %s" % records)
-            was_updated = insert_new_records(records, dbconn) or was_updated
-        was_updated = check_owner_transfers(ipv6, dns, dbconn) or was_updated
+            insert_new_records(records, dbconn)
+        check_owner_transfers(ipv6, dns, dbconn)
 
         dbconn.commit()
         dbconn.close()
     except Exception as e:
         print("  Error inserting records from %s" % ipv6)
         traceback.print_exc()
+
+def read_file(file_name):
+    with open(file_name, 'r') as f:
+        buf = f.read().replace('\r', '')
+        return buf
+
+def update_zone_serial(path):
+    with open(path, "r+") as zonefile:
+        zone = zonefile.read()
+
+        lines = zone.split('\n')
+        for i in range(len(lines)):
+            line = lines[i]
+            pos = line.find("\t; serial")
+            if pos < 0:
+                continue
+            serial = line[:pos].strip()
+            new_serial = int(serial) + 1
+            lines[i] = "\t\t\t%d\t; serial" % new_serial
+
+        new_zone = "\n".join(lines)
+        zonefile.seek(0)
+        zonefile.truncate(0)
+        zonefile.write(new_zone)
 
 def save_zone_info(path, zone):
     try:
@@ -286,10 +304,18 @@ def save_zone_info(path, zone):
         for rec in cursor.fetchall():
             lines.append(rec[0])
         data = "\n".join(lines) + "\n"
+
+        current_zone = read_file(path + ".records")
+        if current_zone == data:
+            print("Skipping update of zone %s, no changes found" % zone)
+            return False
+
         # Saving to file
-        f = open(path, 'w')
-        f.write(data)
-        f.close()
+        with open(path + ".records", 'w') as f:
+            f.write(data)
+        update_zone_serial(path)
+        print("Updated zone %s, something has changed" % zone)
+        return True
     except Exception as e:
         print("  Error saving zone info '%s' to %s" % (zone, path))
         traceback.print_exc()
@@ -356,9 +382,10 @@ for x, y in visited.items():
     if valid_ipv6_check(x) and check_coords(y):
         insert_new_entry(x, y)
 
-print("Done with updating. Updated = %r" % was_updated)
+print("Done with updating. Saving zones.")
 
-if was_updated:
-    for zone in config['ZONES']:
-        save_zone_info("/etc/bind/wyrd/db%s.records" % zone, zone)
+updated = False
+for zone in config['ZONES']:
+    updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
+if updated:
     os.system('/bin/systemctl reload bind9')
