@@ -61,7 +61,7 @@ INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvob
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
 INSERT INTO `domains` VALUES ('static-map.ygg','',NULL,1,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('talk.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'talk	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
-INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	300	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
+INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	120	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('test.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'test	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\n*.test	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\naaa.test	300	IN	AAAA	301:2923::53');
 INSERT INTO `domains` VALUES ('to.ygg','200:1863::1447:c300:24cf:6a5e',NULL,1,0,0,NULL,'to	IN	AAAA	200:1863::1447:c300:24cf:6a5e');
 INSERT INTO `domains` VALUES ('tor-bridge.ygg','223:f05:3dee:526c:d4ec:e65c:457b:7fcf',NULL,1,0,0,NULL,'tor-bridge	IN	AAAA	223:f05:3dee:526c:d4ec:e65c:457b:7fcf');
