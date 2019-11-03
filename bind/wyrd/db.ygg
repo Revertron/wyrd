@@ -12,4 +12,4 @@ $TTL	300
 ns1.dns IN	AAAA	301:2923::53
 ns2.dns IN	AAAA	301:2522::53
 
-$INCLUDE /etc/bind/wyrd/db.um.records
+$INCLUDE /etc/bind/wyrd/db.ygg.records
