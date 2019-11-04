@@ -1,7 +1,7 @@
 # Wyrd
 Decentralized DNS implementation for Yggdrasil
 
-Working servers are here: `301:2522::53` and `301:2923::53`, feel free to use :)
+Working servers are here: `301:2522::53`, `301:2923::53` and `300:4523::53`, feel free to use :)
 
 ## Introduction
 If you use Yggdrasil network, then you've thought about new DNS. Not only to convert names to IPs, but use some additional records, that you can't add to `hosts` file, like CNAME, MX or TXT. And the system should be reliable, if someone got one domain, it must maintain it's owner, and not give it to some second guy.
