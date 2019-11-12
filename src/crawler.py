@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.5
+# version 0.1.6
 
 import MySQLdb
 import json
@@ -157,12 +157,18 @@ def get_valid_owner(ipv6, domain, dbconn):
     owner = ''
     new_owner = ''
     fallback_owner = ''
+    legacy = 0
     cur = dbconn.cursor()
-    cur.execute("SELECT owner, fallback FROM domains WHERE domain=%s;", (domain,))
+    cur.execute("SELECT owner, fallback, legacy FROM domains WHERE domain=%s;", (domain,))
     for row in cur.fetchall():
         owner = row[0]
         fallback = row[1]
+        legacy = row[2]
     cur.close()
+
+    if legacy > 0:
+        print("Ignoring owner change to legacy domain %s" % domain)
+        return False
 
     if owner != '' and owner != ipv6 and ipv6 != fallback:
         return False
@@ -389,3 +395,7 @@ for zone in config['ZONES']:
     updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
 if updated:
     os.system('/bin/systemctl reload bind9')
+    os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > ../db/domains.sql')
+    os.system('git add ../db/domains.sql')
+    os.system('git commit -m "Autocommit changed zone."')
+    os.system('git push origin')
