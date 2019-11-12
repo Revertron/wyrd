@@ -1,7 +1,7 @@
 # Wyrd
 Decentralized DNS implementation for Yggdrasil
 
-Working servers are here: `301:2522::53` and `301:2923::53`, feel free to use :)
+Working servers are here: `301:2522::53`, `301:2923::53` and `300:4523::53`, feel free to use :)
 
 ## Introduction
 If you use Yggdrasil network, then you've thought about new DNS. Not only to convert names to IPs, but use some additional records, that you can't add to `hosts` file, like CNAME, MX or TXT. And the system should be reliable, if someone got one domain, it must maintain it's owner, and not give it to some second guy.
@@ -22,6 +22,47 @@ It gets data - domains, DNS-records, checks for "owner", and stores them in MySQ
 
 How to add your domain to those servers? Easy! Just add needed DNS-records to your zoneinfo like this:
 
+### One domain
+Althought it has a lot of different brackets, but it is simple
+```
+NodeInfo: {
+  dns: {
+    domains: [
+      {
+        domain: example.ygg
+        ip: 200:1111:2222:3333:4444:5555:6666:7777
+      }
+    ]
+  }
+}
+```
+### One domain with subdomains
+```
+NodeInfo: {
+  dns: {
+    domains: [
+      {
+        domain: example.ygg
+        records: [
+            {
+                ip: 200:1111:2222:3333:4444:5555:6666:7777
+                name: @
+                ttl: 300
+                type: AAAA
+            }
+            {
+                ip: 200:1111:2222:3333:4444:5555:6666:7778
+                name: ftp
+                ttl: 600
+                type: AAAA
+            }
+        ]
+      }
+    ]
+  }
+}
+```
+### All other variants with explanation
 ```
 "nodeinfo": {
     "dns": {
