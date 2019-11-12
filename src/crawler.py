@@ -395,7 +395,7 @@ for zone in config['ZONES']:
     updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
 if updated:
     os.system('/bin/systemctl reload bind9')
-    os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > ../db/domains.sql')
-    os.system('git add ../db/domains.sql')
+    os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > db/domains.sql')
+    os.system('git add db/domains.sql')
     os.system('git commit -m "Autocommit changed zone."')
     os.system('git push origin')
