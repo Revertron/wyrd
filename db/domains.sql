@@ -16,7 +16,7 @@ INSERT INTO `domains` VALUES ('blog.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('cdnjs.ygg','',NULL,1,0,0,NULL,'cdnjs	IN	AAAA	300:5bf2:a7a5:27c7::77');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
-INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	324:82ec:c985:d23::1\ndimazhan	300	IN	NS	ns1.dimazhan.ygg');
+INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	324:82ec:c985:d23::1\ndimazhan	300	IN	NS	ns1.dimazhan');
 INSERT INTO `domains` VALUES ('disk.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'disk	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('dns.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'dns	300	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('dns.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572364588,0,NULL,'dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns1.dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns2.dns	300	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
