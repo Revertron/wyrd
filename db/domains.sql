@@ -16,6 +16,7 @@ INSERT INTO `domains` VALUES ('blog.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('cdnjs.ygg','',NULL,1,0,0,NULL,'cdnjs	IN	AAAA	300:5bf2:a7a5:27c7::77');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
+INSERT INTO `domains` VALUES ('cloud.i2pd.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573632752,0,NULL,'cloud.i2pd.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	324:82ec:c985:d23::1\ndimazhan	300	IN	NS	ns1.dimazhan');
 INSERT INTO `domains` VALUES ('disk.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'disk	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('dns.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'dns	300	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
@@ -58,6 +59,7 @@ INSERT INTO `domains` VALUES ('podivilov.ygg','200:34f8:3a1b:5a5f:c188:f950:bf97
 INSERT INTO `domains` VALUES ('privatebin.ygg','',NULL,1,0,0,NULL,'privatebin	IN	AAAA	304:4738:37c6:d295::3');
 INSERT INTO `domains` VALUES ('provodach.ygg','200:1863::1447:c300:24cf:6a5e',NULL,1,0,0,NULL,'provodach	IN	AAAA	200:1863::1447:c300:24cf:6a5e');
 INSERT INTO `domains` VALUES ('read.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'read	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
+INSERT INTO `domains` VALUES ('repo.i2pd.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573632752,0,NULL,'repo.i2pd.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('revertron.hub','200:149b::b722:fe09:d31:84a4',NULL,0,1572723375,0,NULL,'*.revertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nrevertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
