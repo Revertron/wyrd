@@ -53,6 +53,7 @@ INSERT INTO `domains` VALUES ('nic.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6
 INSERT INTO `domains` VALUES ('nntp.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,1,0,0,NULL,'nntp	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
 INSERT INTO `domains` VALUES ('opennic.ygg','200:c493:950a:d576:a413:faef:990b:fb76',NULL,1,0,0,NULL,'opennic	IN	AAAA	200:c493:950a:d576:a413:faef:990b:fb76');
 INSERT INTO `domains` VALUES ('peertube.ygg','',NULL,1,0,0,NULL,'peertube	IN	AAAA	301:fd1:86e3:521c::13');
+INSERT INTO `domains` VALUES ('phreedom.ygg','201:309c:4893:a318:c104:3cd1:d89b:74c0',NULL,0,1574239217,0,NULL,'phreedom	300	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nsearch.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nservices.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0');
 INSERT INTO `domains` VALUES ('pics.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'pics	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('pirateirc.ygg','201:677d:1809:c5eb:202a:d39:e598:305',NULL,1,0,0,NULL,'pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305\r\nirc.pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305');
 INSERT INTO `domains` VALUES ('play.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'play	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
