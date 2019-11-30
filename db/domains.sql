@@ -67,7 +67,7 @@ INSERT INTO `domains` VALUES ('provodach.ygg','200:1863::1447:c300:24cf:6a5e',NU
 INSERT INTO `domains` VALUES ('read.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'read	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('repo.i2pd.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573632752,0,NULL,'repo.i2pd.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('revertron.hub','200:149b::b722:fe09:d31:84a4',NULL,0,1572723375,0,NULL,'*.revertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nrevertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4');
-INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9');
+INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9\nblog.rosblockchain	600	IN	AAAA	202:bc2b:ce9a:e7e:a044:3e7b:162f:85e5');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
 INSERT INTO `domains` VALUES ('static-map.ygg','',NULL,1,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
