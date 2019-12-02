@@ -17,7 +17,6 @@ INSERT INTO `domains` VALUES ('blog.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('cdnjs.ygg','',NULL,1,0,0,NULL,'cdnjs	IN	AAAA	300:5bf2:a7a5:27c7::77');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
-INSERT INTO `domains` VALUES ('cloud.i2pd.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573632752,0,NULL,'cloud.i2pd.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	224:82ec:c985:d23:61b2:7f1c:2f8:b678\ndimazhan	300	IN	NS	ns1.dimazhan');
 INSERT INTO `domains` VALUES ('dimka511.ygg','200:be1b:70c6:183c:152e:3c79:9707:8ec4',NULL,0,1573639363,0,NULL,'dimka511.ygg.	3600	IN	AAAA	200:be1b:70c6:183c:152e:3c79:9707:8ec4');
 INSERT INTO `domains` VALUES ('disk.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'disk	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
@@ -66,7 +65,6 @@ INSERT INTO `domains` VALUES ('podivilov.ygg','200:34f8:3a1b:5a5f:c188:f950:bf97
 INSERT INTO `domains` VALUES ('privatebin.ygg','',NULL,1,0,0,NULL,'privatebin	IN	AAAA	304:4738:37c6:d295::3');
 INSERT INTO `domains` VALUES ('provodach.ygg','200:1863::1447:c300:24cf:6a5e',NULL,1,0,0,NULL,'provodach	IN	AAAA	200:1863::1447:c300:24cf:6a5e');
 INSERT INTO `domains` VALUES ('read.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'read	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
-INSERT INTO `domains` VALUES ('repo.i2pd.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573632752,0,NULL,'repo.i2pd.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('revertron.hub','200:149b::b722:fe09:d31:84a4',NULL,0,1572723375,0,NULL,'*.revertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nrevertron	300	IN	AAAA	200:149b::b722:fe09:d31:84a4');
 INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9\nblog.rosblockchain	600	IN	AAAA	202:bc2b:ce9a:e7e:a044:3e7b:162f:85e5');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
@@ -74,14 +72,11 @@ INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201
 INSERT INTO `domains` VALUES ('static-map.ygg','',NULL,1,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('talk.medium','21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6',NULL,0,1572364588,0,NULL,'talk	3600	IN	AAAA	21c:3148:d6:1d0e:da4a:dfe0:a129:9cf6');
 INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	120	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
-INSERT INTO `domains` VALUES ('test.b1ab1ab1a.ygg','200:bbb:d020:b015:fc89:8062:d47e:709a',NULL,0,1573633832,0,NULL,'test.b1ab1ab1a.ygg.	3600	IN	AAAA	200:b1a:b1a:b1a:b1a:b1a:b1a:b1a');
 INSERT INTO `domains` VALUES ('test.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'test	600	IN	AAAA	200:149b::b722:fe09:d31:84a4\n*.test	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nddd.test	300	IN	AAAA	301:2923::53');
 INSERT INTO `domains` VALUES ('to.ygg','200:1863::1447:c300:24cf:6a5e',NULL,1,0,0,NULL,'to	IN	AAAA	200:1863::1447:c300:24cf:6a5e');
 INSERT INTO `domains` VALUES ('tor-bridge.ygg','223:f05:3dee:526c:d4ec:e65c:457b:7fcf',NULL,1,0,0,NULL,'tor-bridge	IN	AAAA	223:f05:3dee:526c:d4ec:e65c:457b:7fcf');
 INSERT INTO `domains` VALUES ('torrent-tracker.ygg','',NULL,1,0,0,NULL,'torrent-tracker	IN	AAAA	301:4541:2f84:1188:216:3eff:fe34:ec44');
 INSERT INTO `domains` VALUES ('transmission.ygg','200:a0c1:5204:9f99:807d:d4cd:6698:98a3',NULL,1,0,0,NULL,'transmission	IN	AAAA	200:a0c1:5204:9f99:807d:d4cd:6698:98a3');
-INSERT INTO `domains` VALUES ('ttt.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1574229068,0,NULL,'ttt.ygg.	3600	IN	AAAA	324:82ec:c985:d23::1');
-INSERT INTO `domains` VALUES ('ttttt.ygg','201:0:5808:0:d052:ebe7:bd32:4887',NULL,0,1574310898,0,NULL,'ttttt.ygg.	3600	IN	AAAA	324:82ec:c985:d23::1');
 INSERT INTO `domains` VALUES ('tube.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572560526,0,NULL,'tube	300	IN	AAAA	201:2923::6d6:1df0:2970:d382');
 INSERT INTO `domains` VALUES ('umbrellix.ygg','202:8fb5:1490:594d:7e29:98fd:8d79:953f',NULL,1,0,0,NULL,'umbrellix	IN	AAAA	202:8fb5:1490:594d:7e29:98fd:8d79:953f');
 INSERT INTO `domains` VALUES ('wekan.ygg','201:424a:3537:d340:6665:daaa:4918:2181',NULL,1,0,0,NULL,'wekan	IN	AAAA	201:424a:3537:d340:6665:daaa:4918:2181');
