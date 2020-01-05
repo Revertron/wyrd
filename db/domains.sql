@@ -47,6 +47,7 @@ INSERT INTO `domains` VALUES ('phreedom.ygg','201:309c:4893:a318:c104:3cd1:d89b:
 INSERT INTO `domains` VALUES ('ping.ygg','205:1bba:6a3:7f24:599c:d015:92c9:d7fb',NULL,0,1575736893,0,NULL,'ping.ygg.	3600	IN	AAAA	305:1bba:6a3:7f24::22');
 INSERT INTO `domains` VALUES ('pirateirc.ygg','201:677d:1809:c5eb:202a:d39:e598:305',NULL,1,0,0,NULL,'pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305\r\nirc.pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305');
 INSERT INTO `domains` VALUES ('privatebin.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'privatebin	600	IN	AAAA	304:4738:37c6:d295::3');
+INSERT INTO `domains` VALUES ('radiowiki.ygg','201:637e:1861:e97a:afe8:48d2:10c1:9829',NULL,0,1578247996,0,NULL,'radiowiki.ygg.	3600	IN	AAAA	201:637e:1861:e97a:afe8:48d2:10c1:9829');
 INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9\nblog.rosblockchain	600	IN	AAAA	202:bc2b:ce9a:e7e:a044:3e7b:162f:85e5');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
 INSERT INTO `domains` VALUES ('rutor.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutor	600	IN	AAAA	304:4738:37c6:d295::16');
