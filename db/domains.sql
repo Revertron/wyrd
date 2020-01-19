@@ -15,7 +15,7 @@ CREATE TABLE `domains` (
 INSERT INTO `domains` VALUES ('489ab.ygg','21e:badd:af9a:cde0:c89d:2bdd:7571:63a2',NULL,0,1575129654,0,NULL,'489ab.ygg.	3600	IN	AAAA	21e:badd:af9a:cde0:c89d:2bdd:7571:63a2');
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
-INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	224:82ec:c985:d23:61b2:7f1c:2f8:b678\ndimazhan	300	IN	NS	ns1.dimazhan');
+INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'ns1.dimazhan	300	IN	AAAA	324:82ec:c985:d23::53\ndimazhan	300	IN	NS	ns1.dimazhan');
 INSERT INTO `domains` VALUES ('dimka511.ygg','200:be1b:70c6:183c:152e:3c79:9707:8ec4',NULL,0,1573639363,0,NULL,'dimka511.ygg.	3600	IN	AAAA	200:be1b:70c6:183c:152e:3c79:9707:8ec4');
 INSERT INTO `domains` VALUES ('dns.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572364588,0,NULL,'dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns1.dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns2.dns	300	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('domains.ygg','200:149b::b722:fe09:d31:84a4',NULL,1,0,0,NULL,'domains	IN	AAAA	200:149b::b722:fe09:d31:84a4');
