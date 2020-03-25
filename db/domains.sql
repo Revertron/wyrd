@@ -31,6 +31,7 @@ INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2
 INSERT INTO `domains` VALUES ('lg.ygg','',NULL,1,0,0,NULL,'lg	IN	AAAA	300:5bf2:a7a5:27c7::4');
 INSERT INTO `domains` VALUES ('link-directory.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'link-directory	300	IN	AAAA	300:529f:150c:eafe::1');
 INSERT INTO `domains` VALUES ('live.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,0,1578342785,0,NULL,'live.ygg.	3600	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
+INSERT INTO `domains` VALUES ('localnet.evth.ygg','200:70b3:3a19:c265:eec8:d663:1aec:4345',NULL,0,1585157967,0,NULL,'localnet.evth.ygg.	3600	IN	AAAA	200:70b3:3a19:c265:eec8:d663:1aec:4345');
 INSERT INTO `domains` VALUES ('lxc-hosting.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,1,0,0,NULL,'lxc-hosting	IN	AAAA	201:4541:2f84:1188:59ab:e8dd:48a8:d40c');
 INSERT INTO `domains` VALUES ('map.ygg','21f:dd73:7cdb:773b:a924:7ec0:800b:221e',NULL,1,0,0,NULL,'map	IN	AAAA	21f:dd73:7cdb:773b:a924:7ec0:800b:221e');
 INSERT INTO `domains` VALUES ('mesh.ygg','203:60d4:3d32:a2b9:9eea:1c61:7def:a6bc',NULL,0,0,0,NULL,'mesh	IN	AAAA	303:60d4:3d32:a2b9::4');
