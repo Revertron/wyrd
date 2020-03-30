@@ -3,7 +3,7 @@
 #original code https://github.com/Arceliar/yggdrasil-map/blob/master/scripts/crawl-dht.py
 #multithreaded by neilalexander
 
-# version 0.1.6
+# version 0.1.7
 
 import MySQLdb
 import json
@@ -86,11 +86,21 @@ def getNodeInfoTask(address, info):
 def doRequest(req):
     try:
         ygg = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        ygg.settimeout(5)
         ygg.connect(host_port)
         ygg.send(str.encode(req))
         data = json.loads(recv_until_done(ygg))
         ygg.close()
         return data
+    except KeyboardInterrupt:
+        print("\nInterrupted by keyboard")
+        os._exit(0)
+        #try:
+        #    sys.exit(0)
+        #except SystemExit:
+        #    os._exit(0)
+    except socket.timeout:
+        return None
     except:
         traceback.print_exc()
         return None
@@ -309,9 +319,12 @@ def save_zone_info(path, zone):
         lines = []
         for rec in cursor.fetchall():
             lines.append(rec[0])
+
         data = "\n".join(lines) + "\n"
+        data = data.replace("\r\n", "\n")
 
         current_zone = read_file(path + ".records")
+
         if current_zone == data:
             print("Skipping update of zone %s, no changes found" % zone)
             return False
@@ -359,7 +372,7 @@ def handleResponse(address, info, data):
         rumored[addr] = rumor
     if address not in visited:
         visited[str(address)] = info['coords']
-        print("Visited", str(address))
+        #print("Visited", str(address))
     if address in timedout:
         del timedout[address]
 
@@ -367,7 +380,7 @@ def handleResponse(address, info, data):
 
 # Get self info
 selfInfo = doRequest('{"request":"getSelf"}')
-print("selfInfo:", selfInfo)
+print("selfInfo:", selfInfo, "\n")
 
 # Initialize dicts of visited/rumored nodes
 for k,v in selfInfo['response']['self'].items():
@@ -379,6 +392,7 @@ while len(rumored) > 0:
         handleResponse(k, v, doRequest(getDHTPingRequest(v['box_pub_key'], v['coords'])))
         break
     del rumored[k]
+    time.sleep(0.25)
 #End
 
 nodeinfopool.wait()
@@ -394,9 +408,16 @@ updated = False
 for zone in config['ZONES']:
     updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
 
-if updated and config['PUSH_DB_TO_GIT']:
+if updated:
+    print("Reloading DNS server")
     os.system('/bin/systemctl reload bind9')
-    os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > db/domains.sql')
-    os.system('git add db/domains.sql')
-    os.system('git commit -m "Autocommit changed zone."')
-    os.system('git push origin')
+    if config['PUSH_DB_TO_GIT']:
+        print("Pushing changes to GitHub")
+        os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > db/domains.sql')
+        os.system('git add db/domains.sql')
+        os.system('git commit -m "Autocommit changed zone."')
+        os.system('git push origin')
+else:
+    print("No changes found")
+
+print("Done.")
