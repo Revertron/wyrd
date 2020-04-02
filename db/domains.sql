@@ -39,6 +39,7 @@ INSERT INTO `domains` VALUES ('meshirc.ygg','201:870:9573:4095:f4e6:dfde:cc68:c7
 INSERT INTO `domains` VALUES ('minecraft.ygg','202:baed:9808:83c8:738:4041:bd8b:8c1d',NULL,1,0,0,NULL,'minecraft	IN	AAAA	202:baed:9808:83c8:738:4041:bd8b:8c1d');
 INSERT INTO `domains` VALUES ('minetest.ygg','200:362b:d038:d21e:4b2e:2f86:1936:e9e2',NULL,1,0,0,NULL,'minetest	IN	AAAA	200:362b:d038:d21e:4b2e:2f86:1936:e9e2');
 INSERT INTO `domains` VALUES ('myip.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1575029517,0,NULL,'myip	300	IN	AAAA	301:2923::1');
+INSERT INTO `domains` VALUES ('nc.redwoodanarchysts.ygg','200:3643:3949:25d5:6189:b6c8:bbcb:43a4',NULL,0,1585849638,0,NULL,'nc.redwoodanarchysts.ygg.	3600	IN	AAAA	200:3643:3949:25d5:6189:b6c8:bbcb:43a4');
 INSERT INTO `domains` VALUES ('nc.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1574614178,0,NULL,'nc	300	IN	AAAA	201:2923::6d6:1df0:2970:d382');
 INSERT INTO `domains` VALUES ('netwhood.ygg','202:12a9:e5:4474:d473:82be:16ac:9381',NULL,1,0,0,NULL,'netwhood	IN	AAAA	202:12a9:e5:4474:d473:82be:16ac:9381\r\ngit	IN	AAAA	202:12a9:e5:4474:d473:82be:16ac:9381');
 INSERT INTO `domains` VALUES ('nextcloud.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'nextcloud	IN	AAAA	304:4738:37c6:d295::2\r\noffice	IN	AAAA	304:4738:37c6:d295::6');
