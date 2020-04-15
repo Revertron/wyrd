@@ -71,5 +71,6 @@ INSERT INTO `domains` VALUES ('tube.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1
 INSERT INTO `domains` VALUES ('umbrellix.ygg','202:8fb5:1490:594d:7e29:98fd:8d79:953f',NULL,1,0,0,NULL,'umbrellix	IN	AAAA	202:8fb5:1490:594d:7e29:98fd:8d79:953f');
 INSERT INTO `domains` VALUES ('wekan.ygg','201:424a:3537:d340:6665:daaa:4918:2181',NULL,1,0,0,NULL,'wekan	IN	AAAA	201:424a:3537:d340:6665:daaa:4918:2181');
 INSERT INTO `domains` VALUES ('wiki.ygg','203:e0b0:ec08:4e1f:f004:19a9:577a:90ba',NULL,1,0,0,NULL,'wiki	IN	AAAA	203:e0b0:ec08:4e1f:f004:19a9:577a:90ba');
+INSERT INTO `domains` VALUES ('xmpp.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1586988334,0,NULL,'xmpp.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
 INSERT INTO `domains` VALUES ('yggedit.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1572537126,0,NULL,'yggedit	3600	IN	AAAA	301:b614:c68e:b27f::1');
 INSERT INTO `domains` VALUES ('zeronet-public-tracker.ygg','203:5871:3e33:413c:a824:cb7b:2604:92ab',NULL,1,0,0,NULL,'zeronet-public-tracker	IN	AAAA	203:5871:3e33:413c:a824:cb7b:2604:92ab');
