@@ -34,6 +34,7 @@ INSERT INTO `domains` VALUES ('live.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',
 INSERT INTO `domains` VALUES ('localnet.evth.ygg','200:70b3:3a19:c265:eec8:d663:1aec:4345',NULL,0,1585157967,0,NULL,'localnet.evth.ygg.	3600	IN	AAAA	200:70b3:3a19:c265:eec8:d663:1aec:4345');
 INSERT INTO `domains` VALUES ('lxc-hosting.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,1,0,0,NULL,'lxc-hosting	IN	AAAA	201:4541:2f84:1188:59ab:e8dd:48a8:d40c');
 INSERT INTO `domains` VALUES ('map.ygg','21f:dd73:7cdb:773b:a924:7ec0:800b:221e',NULL,1,0,0,NULL,'map	IN	AAAA	21f:dd73:7cdb:773b:a924:7ec0:800b:221e');
+INSERT INTO `domains` VALUES ('matrix.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1587041483,0,NULL,'matrix.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
 INSERT INTO `domains` VALUES ('mesh.ygg','203:60d4:3d32:a2b9:9eea:1c61:7def:a6bc',NULL,0,0,0,NULL,'mesh	IN	AAAA	303:60d4:3d32:a2b9::4');
 INSERT INTO `domains` VALUES ('meshirc.ygg','201:870:9573:4095:f4e6:dfde:cc68:c783',NULL,1,0,0,NULL,'meshirc	IN	AAAA	201:870:9573:4095:f4e6:dfde:cc68:c783');
 INSERT INTO `domains` VALUES ('minecraft.ygg','202:baed:9808:83c8:738:4041:bd8b:8c1d',NULL,1,0,0,NULL,'minecraft	IN	AAAA	202:baed:9808:83c8:738:4041:bd8b:8c1d');
