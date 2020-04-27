@@ -7,7 +7,7 @@ Working servers are here:
 |:--------------:|:--------------------------|
 |`301:2522::53`  | Praha, Czechia            |
 |`301:2923::53`  | Bratislava, Slovakia      |
-|`300:4523::53`  | Naaldwijk, Netherlands    |
+|`300:4523::53`  | Duesseldorf, Germany      |
 |`303:8b1a::53`  | Saint Petersburg, Russia  |
 
 Feel free to use :)
