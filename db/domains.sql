@@ -26,6 +26,7 @@ INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	600	IN	AAAA	304:4738:37c6:d295::5');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	600	IN	AAAA	304:4738:37c6:d295::4');
+INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
 INSERT INTO `domains` VALUES ('ipinfo.ygg','200:aa35:f9c1:dcce:37ea:be41:418d:3921',NULL,0,0,0,NULL,'ipinfo	IN	AAAA	300:aa35:f9c1:dcce::2');
 INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2',NULL,0,1577798900,0,NULL,'jeff.ygg.	3600	IN	AAAA	201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2');
 INSERT INTO `domains` VALUES ('lg.ygg','',NULL,1,0,0,NULL,'lg	IN	AAAA	300:5bf2:a7a5:27c7::4');
