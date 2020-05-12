@@ -30,6 +30,7 @@ INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	600	IN	AAAA	304:4738:37c6:d295::4');
 INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
 INSERT INTO `domains` VALUES ('ipinfo.ygg','200:aa35:f9c1:dcce:37ea:be41:418d:3921',NULL,0,0,0,NULL,'ipinfo	IN	AAAA	300:aa35:f9c1:dcce::2');
+INSERT INTO `domains` VALUES ('iplaymine.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1589280559,0,NULL,'iplaymine.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
 INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2',NULL,0,1577798900,0,NULL,'jeff.ygg.	3600	IN	AAAA	201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2');
 INSERT INTO `domains` VALUES ('lg.ygg','',NULL,1,0,0,NULL,'lg	IN	AAAA	300:5bf2:a7a5:27c7::4');
 INSERT INTO `domains` VALUES ('link-directory.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'link-directory.ygg.	3600	IN	AAAA	300:529f:150c:eafe::1');
@@ -63,11 +64,14 @@ INSERT INTO `domains` VALUES ('radiowiki.ygg','201:637e:1861:e97a:afe8:48d2:10c1
 INSERT INTO `domains` VALUES ('rany.ygg','200:6da6:90d0:c56a:cdbe:fd3:5d36:58f9',NULL,0,1582227411,0,NULL,'rany.ygg.	3600	IN	AAAA	200:6da6:90d0:c56a:cdbe:fd3:5d36:58f9');
 INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9\nblog.rosblockchain	600	IN	AAAA	202:bc2b:ce9a:e7e:a044:3e7b:162f:85e5');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
+INSERT INTO `domains` VALUES ('rutor-mirror.ygg','200:afa6:be2b:e94c:20b6:17e0:a02f:ee35',NULL,0,1589280559,0,NULL,'rutor-mirror.ygg.	3600	IN	AAAA	200:afa6:be2b:e94c:20b6:17e0:a02f:ee35');
 INSERT INTO `domains` VALUES ('rutor.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutor	600	IN	AAAA	304:4738:37c6:d295::16');
 INSERT INTO `domains` VALUES ('rutracker.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutracker	600	IN	AAAA	304:4738:37c6:d295::18');
+INSERT INTO `domains` VALUES ('shentrocode.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'shentrocode.ygg.	3600	IN	AAAA	301:8538:fde:5d90::face');
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
 INSERT INTO `domains` VALUES ('static-map.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	120	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
+INSERT INTO `domains` VALUES ('tepolli.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'tepolli.ygg.	3600	IN	AAAA	301:8538:fde:5d90::6');
 INSERT INTO `domains` VALUES ('test.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'test	600	IN	AAAA	200:149b::b722:fe09:d31:84a4\n*.test	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nddd.test	300	IN	AAAA	301:2923::53');
 INSERT INTO `domains` VALUES ('tor-bridge.ygg','223:f05:3dee:526c:d4ec:e65c:457b:7fcf',NULL,1,0,0,NULL,'tor-bridge	IN	AAAA	223:f05:3dee:526c:d4ec:e65c:457b:7fcf');
 INSERT INTO `domains` VALUES ('torrent-tracker.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'torrent-tracker	IN	AAAA	301:4541:2f84:1188:216:3eff:fe34:ec44');
