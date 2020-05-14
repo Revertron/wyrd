@@ -70,7 +70,7 @@ INSERT INTO `domains` VALUES ('rutor.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8d
 INSERT INTO `domains` VALUES ('rutracker.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutracker	600	IN	AAAA	304:4738:37c6:d295::18');
 INSERT INTO `domains` VALUES ('shentrocode.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'shentrocode.ygg.	3600	IN	AAAA	301:8538:fde:5d90::face');
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
-INSERT INTO `domains` VALUES ('start.ygg','200:34db:aa3:8b93:b5e7:19e3:b0e6:5988',NULL,0,1589401705,0,NULL,'startpage.start	300	IN	AAAA	200:34db:aa3:8b93:b5e7:19e3:b0e6:5988');
+INSERT INTO `domains` VALUES ('start.ygg','200:34db:aa3:8b93:b5e7:19e3:b0e6:5988',NULL,0,1589401705,0,NULL,'start.ygg.	3600	IN	AAAA	200:34db:aa3:8b93:b5e7:19e3:b0e6:5988');
 INSERT INTO `domains` VALUES ('static-map.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	120	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('tepolli.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'tepolli.ygg.	3600	IN	AAAA	301:8538:fde:5d90::6');
