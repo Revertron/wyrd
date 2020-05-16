@@ -30,6 +30,7 @@ INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',N
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	600	IN	AAAA	304:4738:37c6:d295::5');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	600	IN	AAAA	304:4738:37c6:d295::4');
 INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
+INSERT INTO `domains` VALUES ('infernum.ygg','200:64cd:5e98:eb8a:560a:341b:eb77:dd87',NULL,0,1589654655,0,NULL,'infernum.ygg.	3600	IN	AAAA	200:64cd:5e98:eb8a:560a:341b:eb77:dd87');
 INSERT INTO `domains` VALUES ('ipinfo.ygg','200:aa35:f9c1:dcce:37ea:be41:418d:3921',NULL,0,0,0,NULL,'ipinfo	IN	AAAA	300:aa35:f9c1:dcce::2');
 INSERT INTO `domains` VALUES ('iplaymine.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1589280559,0,NULL,'iplaymine.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
 INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2',NULL,0,1577798900,0,NULL,'jeff.ygg.	3600	IN	AAAA	201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2');
@@ -69,6 +70,7 @@ INSERT INTO `domains` VALUES ('rutor-mirror.ygg','200:afa6:be2b:e94c:20b6:17e0:a
 INSERT INTO `domains` VALUES ('rutor.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutor	600	IN	AAAA	304:4738:37c6:d295::16');
 INSERT INTO `domains` VALUES ('rutracker.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutracker	600	IN	AAAA	304:4738:37c6:d295::18');
 INSERT INTO `domains` VALUES ('shentrocode.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'shentrocode.ygg.	3600	IN	AAAA	301:8538:fde:5d90::face');
+INSERT INTO `domains` VALUES ('sites.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1589654655,0,NULL,'sites.ygg.	3600	IN	AAAA	300:529f:150c:eafe::1');
 INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201:d37',NULL,1,0,0,NULL,'speedtest	IN	AAAA	201:424c:a9d8:5d69:f3b0:61ef:f201:d37');
 INSERT INTO `domains` VALUES ('start.ygg','200:34db:aa3:8b93:b5e7:19e3:b0e6:5988',NULL,0,1589401705,0,NULL,'start.ygg.	3600	IN	AAAA	200:34db:aa3:8b93:b5e7:19e3:b0e6:5988');
 INSERT INTO `domains` VALUES ('static-map.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
