@@ -28,6 +28,7 @@ INSERT INTO `domains` VALUES ('flibusta.ygg','204:4738:37c6:d295:1b34:2722:62dd:
 INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'forum-ru	300	IN	AAAA	200:529f:150c:eafe:4405:93fe:8d76:39cb');
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	600	IN	AAAA	304:4738:37c6:d295::5');
+INSERT INTO `domains` VALUES ('hash.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589726996,0,NULL,'hash.ygg.	3600	IN	AAAA	300:b24b::69');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	600	IN	AAAA	304:4738:37c6:d295::4');
 INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
 INSERT INTO `domains` VALUES ('infernum.ygg','200:64cd:5e98:eb8a:560a:341b:eb77:dd87',NULL,0,1589654655,0,NULL,'infernum.ygg.	3600	IN	AAAA	200:64cd:5e98:eb8a:560a:341b:eb77:dd87');
