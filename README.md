@@ -109,7 +109,7 @@ NodeInfo: {
     "name": "My meganode!",
   }
 ```
-Currently these TLDs are supported: `.ygg`, `.medium`, `.ea`, `.um`, `.hub` and `.dns`. If the community will need some more, we can add some.
+Currently only this TLD is supported: `.ygg`. If the community will need some more, we can add some.
 
 ## Installation
 1. You need to have installed bind9, python3 and python3-mysqldb. For example: `apt-get install bind9 python3 python3-mysqldb`.
