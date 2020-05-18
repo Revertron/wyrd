@@ -66,6 +66,7 @@ INSERT INTO `domains` VALUES ('pirateirc.ygg','201:677d:1809:c5eb:202a:d39:e598:
 INSERT INTO `domains` VALUES ('privatebin.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'privatebin	600	IN	AAAA	304:4738:37c6:d295::3');
 INSERT INTO `domains` VALUES ('radiowiki.ygg','201:637e:1861:e97a:afe8:48d2:10c1:9829',NULL,0,1578247996,0,NULL,'radiowiki.ygg.	3600	IN	AAAA	201:637e:1861:e97a:afe8:48d2:10c1:9829');
 INSERT INTO `domains` VALUES ('rany.ygg','200:6da6:90d0:c56a:cdbe:fd3:5d36:58f9',NULL,0,1582227411,0,NULL,'rany.ygg.	3600	IN	AAAA	200:6da6:90d0:c56a:cdbe:fd3:5d36:58f9');
+INSERT INTO `domains` VALUES ('recursive.ygg','201:5daa:bee:e199:89b:f7a2:266a:d35e',NULL,0,1589801790,0,NULL,'recursive	300	IN	CNAME	recursive.ygg');
 INSERT INTO `domains` VALUES ('rosblockchain.ygg','200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4',NULL,0,1575112442,0,NULL,'rosblockchain	300	IN	AAAA	200:9c5:4b30:3cb3:a792:3066:aaf0:ccf4\nmac.rosblockchain	600	IN	AAAA	200:d969:2bb6:47dc:4bb3:a2f0:f398:20b9\nblog.rosblockchain	600	IN	AAAA	202:bc2b:ce9a:e7e:a044:3e7b:162f:85e5');
 INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvoboda	IN	AAAA	300:5bf2:a7a5:27c7::100');
 INSERT INTO `domains` VALUES ('rutor-mirror.ygg','200:afa6:be2b:e94c:20b6:17e0:a02f:ee35',NULL,0,1589280559,0,NULL,'rutor-mirror.ygg.	3600	IN	AAAA	200:afa6:be2b:e94c:20b6:17e0:a02f:ee35');
@@ -78,6 +79,7 @@ INSERT INTO `domains` VALUES ('start.ygg','200:34db:aa3:8b93:b5e7:19e3:b0e6:5988
 INSERT INTO `domains` VALUES ('static-map.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\npx.telegram-proxy	120	IN	AAAA	201:2923::6d6:1df0:2970:d382\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('tepolli.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'tepolli.ygg.	3600	IN	AAAA	301:8538:fde:5d90::6');
+INSERT INTO `domains` VALUES ('test-wyrd-test.ygg','201:5daa:bee:e199:89b:f7a2:266a:d35e',NULL,0,1589801790,0,NULL,'test-wyrd-test	300	IN	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	0.0.0.0');
 INSERT INTO `domains` VALUES ('test.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'test	600	IN	AAAA	200:149b::b722:fe09:d31:84a4\n*.test	300	IN	AAAA	200:149b::b722:fe09:d31:84a4\nddd.test	300	IN	AAAA	301:2923::53');
 INSERT INTO `domains` VALUES ('tor-bridge.ygg','223:f05:3dee:526c:d4ec:e65c:457b:7fcf',NULL,1,0,0,NULL,'tor-bridge	IN	AAAA	223:f05:3dee:526c:d4ec:e65c:457b:7fcf');
 INSERT INTO `domains` VALUES ('torrent-tracker.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'torrent-tracker	IN	AAAA	301:4541:2f84:1188:216:3eff:fe34:ec44');
