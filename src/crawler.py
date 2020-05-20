@@ -47,6 +47,8 @@ class ThreadPool:
     def wait(self):
         self.tasks.join()
 
+record_types = ["A", "AAAA", "NS", "TXT", "SRV", "CNAME", "MX"]
+
 visited = dict() # Add nodes after a successful lookup response
 rumored = dict() # Add rumors about nodes to ping
 timedout = dict()
@@ -86,7 +88,7 @@ def getNodeInfoTask(address, info):
 def doRequest(req):
     try:
         ygg = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        ygg.settimeout(5)
+        ygg.settimeout(10)
         ygg.connect(host_port)
         ygg.send(str.encode(req))
         data = json.loads(recv_until_done(ygg))
@@ -155,6 +157,8 @@ def record_to_string(domain, record):
         name = domain_name
     ttl = record["ttl"] if "ttl" in record else 300
     type = record["type"] if "type" in record else "AAAA"
+    if type not in record_types:
+        type = "AAAA"
     if name == domain_name:
         result = "%s\t%s\tIN\t%s\t%s" % (domain_name, ttl, type, data)
     else:
@@ -378,46 +382,73 @@ def handleResponse(address, info, data):
 
     nodeinfopool.add(getNodeInfoTask, address, info)
 
-# Get self info
-selfInfo = doRequest('{"request":"getSelf"}')
-print("selfInfo:", selfInfo, "\n")
+def crawl():
+    global visited
+    global rumored
+    global timedout
 
-# Initialize dicts of visited/rumored nodes
-for k,v in selfInfo['response']['self'].items():
-    rumored[k] = v
+    # Get self info
+    selfInfo = doRequest('{"request":"getSelf"}')
+    print("selfInfo:", selfInfo, "\n")
 
-# Loop over rumored nodes and ping them, adding to visited if they respond
-while len(rumored) > 0:
-    for k,v in rumored.items():
-        handleResponse(k, v, doRequest(getDHTPingRequest(v['box_pub_key'], v['coords'])))
-        break
-    del rumored[k]
-    time.sleep(0.25)
-#End
+    # Initialize dicts of visited/rumored nodes
+    for k,v in selfInfo['response']['self'].items():
+        rumored[k] = v
 
-nodeinfopool.wait()
+    # Loop over rumored nodes and ping them, adding to visited if they respond
+    while len(rumored) > 0:
+        for k,v in rumored.items():
+            if k not in timedout:
+                handleResponse(k, v, doRequest(getDHTPingRequest(v['box_pub_key'], v['coords'])))
+            else:
+                print("Skipping node %s as timedout" % k)
+            break
+        del rumored[k]
+        time.sleep(1)
+    #End
 
-print("\nNodeinfopool is ready, nodeinfo length is", len(nodeinfo))
-for x, y in visited.items():
-    if valid_ipv6_check(x) and check_coords(y):
-        insert_new_entry(x, y)
+    nodeinfopool.wait()
 
-print("Done with updating. Saving zones.")
+    print("\nNodeinfopool is ready, nodeinfo length is", len(nodeinfo))
+    for x, y in visited.items():
+        if valid_ipv6_check(x) and check_coords(y):
+            insert_new_entry(x, y)
 
-updated = False
-for zone in config['ZONES']:
-    updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
+    print("Done with updating. Saving zones.")
 
-if updated:
-    print("Reloading DNS server")
-    os.system('/bin/systemctl reload bind9')
-    if config['PUSH_DB_TO_GIT']:
-        print("Pushing changes to GitHub")
-        os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > db/domains.sql')
-        os.system('git add db/domains.sql')
-        os.system('git commit -m "Autocommit changed zone."')
-        os.system('git push origin')
-else:
-    print("No changes found")
+    updated = False
+    for zone in config['ZONES']:
+        updated = save_zone_info("/etc/bind/wyrd/db%s" % zone, zone) or updated
 
-print("Done.")
+    if updated:
+        print("Reloading DNS server")
+        os.system('/bin/systemctl reload bind9')
+        if config['PUSH_DB_TO_GIT']:
+            print("Pushing changes to GitHub")
+            os.system('mysqldump --skip-dump-date --compact --skip-extended-insert --skip-comments --order-by-primary wyrd domains > db/domains.sql')
+            os.system('git add db/domains.sql')
+            os.system('git commit -m "Autocommit changed zone."')
+            os.system('git push origin')
+    else:
+        print("No changes found")
+
+    print("Done.")
+
+# Starting the work
+pass_count = 1
+while True:
+    visited.clear()
+    rumored.clear()
+    nodeinfo.clear()
+    if pass_count == 5:
+        timedout.clear()
+        pass_count = 1
+    else:
+        pass_count = pass_count + 1
+
+    timeFormat = "%H:%M:%S"
+    start_time = time.strftime(timeFormat, time.gmtime())
+    crawl()
+    end_time = time.strftime(timeFormat, time.gmtime())
+    print("Crawl finished. Started at %s, finished at %s." % (start_time, end_time))
+    time.sleep(60)
