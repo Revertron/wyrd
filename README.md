@@ -46,6 +46,7 @@ NodeInfo: {
 }
 ```
 ### One domain with subdomains
+If you use the `records` array with `type` and/or `ttl`, then you need to change `ip` to `data`, because there may be some CNAME also, not only IP.
 ```
 NodeInfo: {
   dns: {
@@ -54,13 +55,13 @@ NodeInfo: {
         domain: example.ygg
         records: [
             {
-                ip: 200:1111:2222:3333:4444:5555:6666:7777
+                data: 200:1111:2222:3333:4444:5555:6666:7777
                 name: @
                 ttl: 300
                 type: AAAA
             }
             {
-                ip: 200:1111:2222:3333:4444:5555:6666:7778
+                data: 200:1111:2222:3333:4444:5555:6666:7778
                 name: ftp
                 ttl: 600
                 type: AAAA
@@ -83,7 +84,7 @@ NodeInfo: {
           "records": [
             {
               // The IP address to resolve to, it may be different from your node's address
-              "ip": "200:149b::b722:fe09:d31:84a4",
+              "data": "200:149b::b722:fe09:d31:84a4",
               "name": "*", // You can omit it, default "@" will be used
               "ttl": 300, // You can omit it too, default 3600 (one hour) will be used
               "type": "AAAA" // And this one can be omited, AAAA will be used as default
