@@ -29,6 +29,7 @@ INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	600	IN	AAAA	304:4738:37c6:d295::5');
 INSERT INTO `domains` VALUES ('hash.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589726996,0,NULL,'hash.ygg.	3600	IN	AAAA	300:b24b::69');
+INSERT INTO `domains` VALUES ('howto.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1590484698,0,NULL,'howto.ygg.	3600	IN	AAAA	300:529f:150c:eafe::6');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	600	IN	AAAA	304:4738:37c6:d295::4');
 INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
 INSERT INTO `domains` VALUES ('infernum.ygg','200:64cd:5e98:eb8a:560a:341b:eb77:dd87',NULL,0,1589654655,0,NULL,'infernum.ygg.	3600	IN	AAAA	200:64cd:5e98:eb8a:560a:341b:eb77:dd87');
@@ -60,7 +61,7 @@ INSERT INTO `domains` VALUES ('oauth.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:b66
 INSERT INTO `domains` VALUES ('omega9.ygg','200:6494:5ba3:4570:bde9:ae67:9b0f:b78a',NULL,0,1574721529,0,NULL,'omega9.ygg.	3600	IN	AAAA	200:6494:5ba3:4570:bde9:ae67:9b0f:b78a');
 INSERT INTO `domains` VALUES ('opennic.ygg','200:c493:950a:d576:a413:faef:990b:fb76',NULL,1,0,0,NULL,'opennic	IN	AAAA	200:c493:950a:d576:a413:faef:990b:fb76');
 INSERT INTO `domains` VALUES ('peertube.ygg','',NULL,1,0,0,NULL,'peertube	IN	AAAA	301:fd1:86e3:521c::13');
-INSERT INTO `domains` VALUES ('phreedom.ygg','201:309c:4893:a318:c104:3cd1:d89b:74c0',NULL,0,1574239217,0,NULL,'phreedom	300	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nsearch.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nservices.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0');
+INSERT INTO `domains` VALUES ('phreedom.ygg','201:16aa:8265:3922:f2bc:e345:4310:e895',NULL,0,1574239217,0,NULL,'phreedom	300	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nsearch.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0\nservices.phreedom	600	IN	AAAA	201:309c:4893:a318:c104:3cd1:d89b:74c0');
 INSERT INTO `domains` VALUES ('ping.ygg','205:1bba:6a3:7f24:599c:d015:92c9:d7fb',NULL,0,1575736893,0,NULL,'ping.ygg.	3600	IN	AAAA	305:1bba:6a3:7f24::22');
 INSERT INTO `domains` VALUES ('pirateirc.ygg','201:677d:1809:c5eb:202a:d39:e598:305',NULL,1,0,0,NULL,'pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305\r\nirc.pirateirc	IN	AAAA	201:677d:1809:c5eb:202a:d39:e598:305');
 INSERT INTO `domains` VALUES ('privatebin.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'privatebin	600	IN	AAAA	304:4738:37c6:d295::3');
