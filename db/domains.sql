@@ -17,6 +17,7 @@ INSERT INTO `domains` VALUES ('489ab.ygg','21e:badd:af9a:cde0:c89d:2bdd:7571:63a
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('cadaver.ygg','202:ea1a:68ce:cb93:b375:ce86:8581:afc',NULL,0,1589326952,0,NULL,'cadaver.ygg.	3600	IN	AAAA	302:ea1a:68ce:cb93::dead');
 INSERT INTO `domains` VALUES ('casino.ygg','200:bdfc::fcba:9785:4760:6989',NULL,0,1588694640,0,NULL,'casino	300	IN	AAAA	300:bdfc::');
+INSERT INTO `domains` VALUES ('cathugger.ygg','201:4806:21d5:c971:407f:4ea9:4d7d:e491',NULL,0,1590844001,0,NULL,'cathugger	300	IN	NS	ns1.cathugger.ygg\nns1.cathugger	300	IN	AAAA	201:4806:21d5:c971:407f:4ea9:4d7d:e491');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
 INSERT INTO `domains` VALUES ('dimazhan.ygg','224:82ec:c985:d23:61b2:7f1c:2f8:b678',NULL,0,1573595315,0,NULL,'dimazhan	300	IN	AAAA	324:82ec:c985:d23::1\nns1.dimazhan	300	IN	AAAA	324:82ec:c985:d23::53');
 INSERT INTO `domains` VALUES ('dimka511.ygg','200:be1b:70c6:183c:152e:3c79:9707:8ec4',NULL,0,1573639363,0,NULL,'dimka511.ygg.	3600	IN	AAAA	200:be1b:70c6:183c:152e:3c79:9707:8ec4');
