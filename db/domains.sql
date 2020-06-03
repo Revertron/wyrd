@@ -94,5 +94,5 @@ INSERT INTO `domains` VALUES ('wiki.ygg','203:e0b0:ec08:4e1f:f004:19a9:577a:90ba
 INSERT INTO `domains` VALUES ('xmpp.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1586988334,0,NULL,'xmpp.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
 INSERT INTO `domains` VALUES ('yggedit.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1572537126,0,NULL,'yggedit.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::1');
 INSERT INTO `domains` VALUES ('yggy-forum.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1589758002,0,NULL,'yggy-forum.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::2');
-INSERT INTO `domains` VALUES ('yoitz.ygg','204:e74c:728b:2469:8ebb:860f:6db0:c315',NULL,0,1591192182,0,NULL,'yoitz.ygg.	3600	IN	AAAA	2204:e74c:728b:2469:8ebb:860f:6db0:c315');
+INSERT INTO `domains` VALUES ('yoitz.ygg','204:e74c:728b:2469:8ebb:860f:6db0:c315',NULL,0,1591192182,0,NULL,'yoitz.ygg.	3600	IN	AAAA	204:e74c:728b:2469:8ebb:860f:6db0:c315');
 INSERT INTO `domains` VALUES ('zeronet-public-tracker.ygg','203:5871:3e33:413c:a824:cb7b:2604:92ab',NULL,1,0,0,NULL,'zeronet-public-tracker	IN	AAAA	203:5871:3e33:413c:a824:cb7b:2604:92ab');
