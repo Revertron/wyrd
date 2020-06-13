@@ -45,6 +45,7 @@ INSERT INTO `domains` VALUES ('live.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',
 INSERT INTO `domains` VALUES ('localnet.evth.ygg','200:70b3:3a19:c265:eec8:d663:1aec:4345',NULL,0,1585157967,0,NULL,'localnet.evth.ygg.	3600	IN	AAAA	200:70b3:3a19:c265:eec8:d663:1aec:4345');
 INSERT INTO `domains` VALUES ('lxc-hosting.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,1,0,0,NULL,'lxc-hosting	IN	AAAA	201:4541:2f84:1188:59ab:e8dd:48a8:d40c');
 INSERT INTO `domains` VALUES ('map.ygg','21f:dd73:7cdb:773b:a924:7ec0:800b:221e',NULL,1,0,0,NULL,'map	IN	AAAA	21f:dd73:7cdb:773b:a924:7ec0:800b:221e');
+INSERT INTO `domains` VALUES ('mas.ygg','200:5930:5570:f091:2d79:e33f:8968:5111',NULL,0,1592081134,0,NULL,'mas	300	IN	AAAA	300:5930:5570:f091::1\ncloud.mas	600	IN	AAAA	300:5930:5570:f091::2');
 INSERT INTO `domains` VALUES ('matrix.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1587041483,0,NULL,'matrix.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
 INSERT INTO `domains` VALUES ('mattermost.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589720538,0,NULL,'mattermost.ygg.	3600	IN	AAAA	300:b24b::69');
 INSERT INTO `domains` VALUES ('mesh.ygg','203:60d4:3d32:a2b9:9eea:1c61:7def:a6bc',NULL,0,0,0,NULL,'mesh	IN	AAAA	303:60d4:3d32:a2b9::4');
