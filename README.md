@@ -1,5 +1,5 @@
 # Wyrd
-Decentralized DNS implementation for Yggdrasil
+Autamatic, NodeInfo based DNS implementation for Yggdrasil
 
 Working servers are here:
 
@@ -112,7 +112,7 @@ NodeInfo: {
 ```
 Currently only this TLD is supported: `.ygg`. If the community will need some more, we can add some.
 
-## Installation
+## Installation (if you want to run your instance)
 1. You need to have installed bind9, python3 and python3-mysqldb. For example: `apt-get install bind9 python3 python3-mysqldb`.
 2. Clone this repository
 3. Create a database `wyrd`, user `wyrd` and give this user all privileges for this DB.
