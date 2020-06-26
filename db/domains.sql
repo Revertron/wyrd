@@ -29,6 +29,7 @@ INSERT INTO `domains` VALUES ('f07b.ygg','200:c2a6:91be:4366:a130:9be:62e7:f07b'
 INSERT INTO `domains` VALUES ('fallenedem.ygg','201:92eb:2c63:b88f:cb5e:d2d6:756c:fb08',NULL,0,1578438538,0,NULL,'fallenedem.ygg.	3600	IN	AAAA	201:92eb:2c63:b88f:cb5e:d2d6:756c:fb08');
 INSERT INTO `domains` VALUES ('fc.ygg','200:9186:db21:a92b:a987:e4a1:4558:83b4',NULL,0,1579715467,0,NULL,'fc.ygg.	3600	IN	AAAA	200:9186:db21:a92b:a987:e4a1:4558:83b4');
 INSERT INTO `domains` VALUES ('flibusta.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1574280877,0,NULL,'flibusta	600	IN	AAAA	304:4738:37c6:d295::7');
+INSERT INTO `domains` VALUES ('flying-squid.ygg','204:4ba9::a42c:255d:1fc2:e52b',NULL,0,1593189036,0,NULL,'flying-squid.ygg.	3600	IN	AAAA	204:4ba9::a42c:255d:1fc2:e52b');
 INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'forum-ru	300	IN	AAAA	200:529f:150c:eafe:4405:93fe:8d76:39cb');
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	600	IN	AAAA	304:4738:37c6:d295::5');
