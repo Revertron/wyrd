@@ -47,7 +47,7 @@ INSERT INTO `domains` VALUES ('link-directory.ygg','200:529f:150c:eafe:4405:93fe
 INSERT INTO `domains` VALUES ('live.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,0,1578342785,0,NULL,'live.ygg.	3600	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
 INSERT INTO `domains` VALUES ('localnet.evth.ygg','200:70b3:3a19:c265:eec8:d663:1aec:4345',NULL,0,1585157967,0,NULL,'localnet.evth.ygg.	3600	IN	AAAA	200:70b3:3a19:c265:eec8:d663:1aec:4345');
 INSERT INTO `domains` VALUES ('lxc-hosting.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,1,0,0,NULL,'lxc-hosting	IN	AAAA	201:4541:2f84:1188:59ab:e8dd:48a8:d40c');
-INSERT INTO `domains` VALUES ('mail.ygg','200:5549::5719:a3e6:a9ed:baa4',NULL,0,1593892789,0,NULL,'mail	600	IN	AAAA	300:5549::1\nsmtp.mail	600	IN	AAAA	300:5549::1\nimap.mail	600	IN	AAAA	300:5549::1\nmail	600	IN	MX 10	smtp.mail.ygg');
+INSERT INTO `domains` VALUES ('mail.ygg','200:5549::5719:a3e6:a9ed:baa4',NULL,0,1593892789,0,NULL,'mail	600	IN	AAAA	300:5549::1\nmx.mail	600	IN	AAAA	300:5549::1\nsmtp.mail	600	IN	CNAME	mx.mail.ygg\nimap.mail	600	IN	CNAME	mx.mail.ygg\nmail	600	IN	MX 10	mx.mail');
 INSERT INTO `domains` VALUES ('map.ygg','21f:dd73:7cdb:773b:a924:7ec0:800b:221e',NULL,1,0,0,NULL,'map	IN	AAAA	21f:dd73:7cdb:773b:a924:7ec0:800b:221e');
 INSERT INTO `domains` VALUES ('mas.ygg','200:5930:5570:f091:2d79:e33f:8968:5111',NULL,0,1592081134,0,NULL,'mas	300	IN	AAAA	300:5930:5570:f091::1\ncloud.mas	600	IN	AAAA	300:5930:5570:f091::2');
 INSERT INTO `domains` VALUES ('matrix.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1587041483,0,NULL,'matrix.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
