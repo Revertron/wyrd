@@ -1,5 +1,5 @@
 # Wyrd
-Autamatic, NodeInfo based DNS implementation for Yggdrasil
+Automatic, NodeInfo based DNS implementation for Yggdrasil
 
 Working servers are here:
 
