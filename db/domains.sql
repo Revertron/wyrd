@@ -69,6 +69,7 @@ INSERT INTO `domains` VALUES ('nodelist.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:
 INSERT INTO `domains` VALUES ('oauth.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:b66f',NULL,0,1579181149,0,NULL,'oauth	600	IN	AAAA	31a:fb8a:c43e:ca59::3\n*.oauth	600	IN	AAAA	31a:fb8a:c43e:ca59::3');
 INSERT INTO `domains` VALUES ('omega9.ygg','200:6494:5ba3:4570:bde9:ae67:9b0f:b78a',NULL,0,1574721529,0,NULL,'omega9.ygg.	3600	IN	AAAA	200:6494:5ba3:4570:bde9:ae67:9b0f:b78a');
 INSERT INTO `domains` VALUES ('opennic.ygg','200:c493:950a:d576:a413:faef:990b:fb76',NULL,1,0,0,NULL,'opennic	IN	AAAA	200:c493:950a:d576:a413:faef:990b:fb76');
+INSERT INTO `domains` VALUES ('osmarks.ygg','207:1473:146:ae77:a3be:d39f:8e59:d256',NULL,0,1594146087,0,NULL,'osmarks.ygg.	3600	IN	AAAA	207:1473:146:ae77:a3be:d39f:8e59:d256');
 INSERT INTO `domains` VALUES ('peertube.ygg','',NULL,1,0,0,NULL,'peertube	IN	AAAA	301:fd1:86e3:521c::13');
 INSERT INTO `domains` VALUES ('phreedom.ygg','201:16aa:8265:3922:f2bc:e345:4310:e895',NULL,0,1574239217,0,NULL,'phreedom	300	IN	AAAA	201:16aa:8265:3922:f2bc:e345:4310:e895\ntube.phreedom	600	IN	AAAA	301:16aa:8265:3922::1\nsearch.phreedom	600	IN	AAAA	301:16aa:8265:3922::2\nmusic.phreedom	600	IN	AAAA	301:16aa:8265:3922::3');
 INSERT INTO `domains` VALUES ('ping.ygg','205:1bba:6a3:7f24:599c:d015:92c9:d7fb',NULL,0,1575736893,0,NULL,'ping.ygg.	3600	IN	AAAA	305:1bba:6a3:7f24::22');
