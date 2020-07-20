@@ -21,7 +21,7 @@ INSERT INTO `domains` VALUES ('cathugger.ygg','201:4806:21d5:c971:407f:4ea9:4d7d
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
 INSERT INTO `domains` VALUES ('coffee-cms.ygg','201:92ca:1113:af5a:3068:ef27:c0a8:19fa',NULL,0,1595113829,0,NULL,'coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa\nsoc.coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa');
 INSERT INTO `domains` VALUES ('dark.ygg','218:999c:60c:e211:251f:bc5a:95a3:4892',NULL,0,1591060031,0,NULL,'dark.ygg.	3600	IN	AAAA	218:999c:60c:e211:251f:bc5a:95a3:4892');
-INSERT INTO `domains` VALUES ('dimazhan.ygg','200:6a92::54ee:19f5:d133:a820',NULL,0,1573595315,0,NULL,'dimazhan	300	IN	AAAA	300:6a92::1\nns1.dimazhan	300	IN	AAAA	300:6a92::53\nmc.dimazhan	300	IN	AAAA	300:6a92::6');
+INSERT INTO `domains` VALUES ('dimazhan.ygg','200:6a92::54ee:19f5:d133:a820',NULL,0,1573595315,0,NULL,'dimazhan	300	IN	AAAA	300:6a92::1\nns1.dimazhan	300	IN	AAAA	300:6a92::53\nmc.dimazhan	300	IN	AAAA	300:6a92::100');
 INSERT INTO `domains` VALUES ('dimka511.ygg','200:be1b:70c6:183c:152e:3c79:9707:8ec4',NULL,0,1573639363,0,NULL,'dimka511.ygg.	3600	IN	AAAA	200:be1b:70c6:183c:152e:3c79:9707:8ec4');
 INSERT INTO `domains` VALUES ('dns.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572364588,0,NULL,'dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns1.dns	300	IN	AAAA	201:2923::6d6:1df0:2970:d382\nns2.dns	300	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('domains.ygg','200:2962::64cd:7a09:c268:a954',NULL,1,0,0,NULL,'domains	IN	AAAA	200:149b::b722:fe09:d31:84a4');
