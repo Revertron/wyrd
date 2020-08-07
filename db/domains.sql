@@ -57,6 +57,7 @@ INSERT INTO `domains` VALUES ('mesh.ygg','203:60d4:3d32:a2b9:9eea:1c61:7def:a6bc
 INSERT INTO `domains` VALUES ('meshirc.ygg','201:870:9573:4095:f4e6:dfde:cc68:c783',NULL,1,0,0,NULL,'meshirc	IN	AAAA	201:870:9573:4095:f4e6:dfde:cc68:c783');
 INSERT INTO `domains` VALUES ('minecraft.ygg','202:baed:9808:83c8:738:4041:bd8b:8c1d',NULL,1,0,0,NULL,'minecraft	IN	AAAA	202:baed:9808:83c8:738:4041:bd8b:8c1d');
 INSERT INTO `domains` VALUES ('minecraft511.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1588958336,0,NULL,'minecraft511.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
+INSERT INTO `domains` VALUES ('minein.ygg','204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e',NULL,0,1596828429,0,NULL,'minein.ygg.	3600	IN	AAAA	204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e');
 INSERT INTO `domains` VALUES ('minetest.ygg','200:362b:d038:d21e:4b2e:2f86:1936:e9e2',NULL,1,0,0,NULL,'minetest	IN	AAAA	200:362b:d038:d21e:4b2e:2f86:1936:e9e2');
 INSERT INTO `domains` VALUES ('myip.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1575029517,0,NULL,'myip	300	IN	AAAA	301:2923::1');
 INSERT INTO `domains` VALUES ('nc.redwoodanarchysts.ygg','200:3643:3949:25d5:6189:b6c8:bbcb:43a4',NULL,0,1585849638,0,NULL,'nc.redwoodanarchysts.ygg.	3600	IN	AAAA	200:3643:3949:25d5:6189:b6c8:bbcb:43a4');
