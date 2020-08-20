@@ -14,6 +14,7 @@ CREATE TABLE `domains` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 INSERT INTO `domains` VALUES ('0chan.ygg','202:7668:15bf:63df:d7ee:aab7:ece:fbbb',NULL,0,1589052783,0,NULL,'0chan	300	IN	AAAA	202:7668:15bf:63df:d7ee:aab7:ece:fbbb\ns01.0chan	300	IN	AAAA	202:7668:15bf:63df:d7ee:aab7:ece:fbbb');
 INSERT INTO `domains` VALUES ('489ab.ygg','21e:badd:af9a:cde0:c89d:2bdd:7571:63a2',NULL,0,1575129654,0,NULL,'489ab.ygg.	3600	IN	AAAA	21e:badd:af9a:cde0:c89d:2bdd:7571:63a2');
+INSERT INTO `domains` VALUES ('acetone.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1597923834,0,NULL,'acetone.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::ace');
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('cadaver.ygg','202:ea1a:68ce:cb93:b375:ce86:8581:afc',NULL,0,1589326952,0,NULL,'cadaver.ygg.	3600	IN	AAAA	302:ea1a:68ce:cb93::dead');
 INSERT INTO `domains` VALUES ('casino.ygg','200:bdfc::fcba:9785:4760:6989',NULL,0,1588694640,0,NULL,'casino	300	IN	AAAA	300:bdfc::');
