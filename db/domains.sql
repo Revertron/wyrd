@@ -44,6 +44,7 @@ INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d
 INSERT INTO `domains` VALUES ('infernum.ygg','200:64cd:5e98:eb8a:560a:341b:eb77:dd87',NULL,0,1589654655,0,NULL,'infernum.ygg.	3600	IN	AAAA	200:64cd:5e98:eb8a:560a:341b:eb77:dd87');
 INSERT INTO `domains` VALUES ('ipinfo.ygg','200:aa35:f9c1:dcce:37ea:be41:418d:3921',NULL,0,0,0,NULL,'ipinfo	IN	AAAA	300:aa35:f9c1:dcce::2');
 INSERT INTO `domains` VALUES ('iplaymine.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1589280559,0,NULL,'iplaymine.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
+INSERT INTO `domains` VALUES ('irc-ilita.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1598435374,0,NULL,'irc-ilita.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::41');
 INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2',NULL,0,1577798900,0,NULL,'jeff.ygg.	3600	IN	AAAA	201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2');
 INSERT INTO `domains` VALUES ('lg.ygg','',NULL,1,0,0,NULL,'lg	IN	AAAA	300:5bf2:a7a5:27c7::4');
 INSERT INTO `domains` VALUES ('link-directory.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'link-directory.ygg.	3600	IN	AAAA	300:529f:150c:eafe::1');
