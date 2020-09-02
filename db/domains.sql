@@ -38,7 +38,7 @@ INSERT INTO `domains` VALUES ('flying-squid.ygg','204:4ba9::a42c:255d:1fc2:e52b'
 INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'forum-ru	300	IN	AAAA	200:529f:150c:eafe:4405:93fe:8d76:39cb');
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	21600	IN	CNAME	git.i2pd.xyz');
-INSERT INTO `domains` VALUES ('haseul.ygg','200:2757:2aed:5b15:c8f7:ed0f:b04c:9b4c',NULL,0,1598818285,0,NULL,'haseul	86400	IN	AAAA	200:2757:2aed:5b15:c8f7:ed0f:b04c:9b4c');
+INSERT INTO `domains` VALUES ('haseul.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'haseul	86400	IN	AAAA	228:e140:b0bc:d538:1a7a:5d1e:6a29:1591');
 INSERT INTO `domains` VALUES ('hash.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589726996,0,NULL,'hash.ygg.	3600	IN	AAAA	300:b24b::69');
 INSERT INTO `domains` VALUES ('howto.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1590484698,0,NULL,'howto.ygg.	3600	IN	AAAA	300:529f:150c:eafe::6');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	21600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	21600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	21600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	21600	IN	AAAA	304:4738:37c6:d295::4\ngit.i2pd	21600	IN	AAAA	31a:fb8a:c43e:ca59::4');
