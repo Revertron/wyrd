@@ -90,6 +90,7 @@ INSERT INTO `domains` VALUES ('roskomsvoboda.ygg','',NULL,1,0,0,NULL,'roskomsvob
 INSERT INTO `domains` VALUES ('rutor-mirror.ygg','200:afa6:be2b:e94c:20b6:17e0:a02f:ee35',NULL,0,1589280559,0,NULL,'rutor-mirror.ygg.	3600	IN	AAAA	200:afa6:be2b:e94c:20b6:17e0:a02f:ee35');
 INSERT INTO `domains` VALUES ('rutor.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutor	21600	IN	AAAA	304:4738:37c6:d295::16');
 INSERT INTO `domains` VALUES ('rutracker.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'rutracker	21600	IN	AAAA	304:4738:37c6:d295::18');
+INSERT INTO `domains` VALUES ('sayomortal.ygg','201:8789:756e:e9ef:a11a:a133:3cef:fdc0',NULL,0,1599397334,0,NULL,'sayomortal.ygg.	3600	IN	AAAA	201:8789:756e:e9ef:a11a:a133:3cef:fdc0');
 INSERT INTO `domains` VALUES ('sergonomik.ygg','200:60fa:d260:7a5b:b4bd:9870:dde8:edc1',NULL,0,1595208384,0,NULL,'sergonomik	3600	IN	AAAA	200:60fa:d260:7a5b:b4bd:9870:dde8:edc1');
 INSERT INTO `domains` VALUES ('shentrocode.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'shentrocode.ygg.	3600	IN	AAAA	301:8538:fde:5d90::face');
 INSERT INTO `domains` VALUES ('sites.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1589654655,0,NULL,'sites.ygg.	3600	IN	AAAA	300:529f:150c:eafe::1');
