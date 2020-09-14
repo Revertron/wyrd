@@ -112,6 +112,7 @@ INSERT INTO `domains` VALUES ('umbrellix.ygg','202:8fb5:1490:594d:7e29:98fd:8d79
 INSERT INTO `domains` VALUES ('wekan.ygg','201:424a:3537:d340:6665:daaa:4918:2181',NULL,1,0,0,NULL,'wekan	IN	AAAA	201:424a:3537:d340:6665:daaa:4918:2181');
 INSERT INTO `domains` VALUES ('wiki.ygg','203:e0b0:ec08:4e1f:f004:19a9:577a:90ba',NULL,1,0,0,NULL,'wiki	IN	AAAA	203:e0b0:ec08:4e1f:f004:19a9:577a:90ba');
 INSERT INTO `domains` VALUES ('xmpp.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1586988334,0,NULL,'xmpp.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
+INSERT INTO `domains` VALUES ('xn--jor614i.ygg','201:61b2::9ac:e398:a5ad:b875',NULL,0,1600118969,0,NULL,'xn--jor614i.ygg.	3600	IN	AAAA	301:61b2::1');
 INSERT INTO `domains` VALUES ('yeojin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1599078401,0,NULL,'yeojin	86400	IN	AAAA	227:fef4:49b1:30b4:9bef:39fe:26b0:d2f2');
 INSERT INTO `domains` VALUES ('yggedit.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1572537126,0,NULL,'yggedit.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::1');
 INSERT INTO `domains` VALUES ('yggy-forum.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1589758002,0,NULL,'yggy-forum.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::2');
