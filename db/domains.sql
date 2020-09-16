@@ -66,6 +66,7 @@ INSERT INTO `domains` VALUES ('minecraft.ygg','202:baed:9808:83c8:738:4041:bd8b:
 INSERT INTO `domains` VALUES ('minecraft511.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1588958336,0,NULL,'minecraft511.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
 INSERT INTO `domains` VALUES ('minein.ygg','204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e',NULL,0,1596828429,0,NULL,'minein.ygg.	3600	IN	AAAA	204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e');
 INSERT INTO `domains` VALUES ('minetest.ygg','200:362b:d038:d21e:4b2e:2f86:1936:e9e2',NULL,1,0,0,NULL,'minetest	IN	AAAA	200:362b:d038:d21e:4b2e:2f86:1936:e9e2');
+INSERT INTO `domains` VALUES ('mumble.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1600243700,0,NULL,'mumble.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::cafe');
 INSERT INTO `domains` VALUES ('myip.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1575029517,0,NULL,'myip	300	IN	AAAA	301:2923::1\ndns1.myip	300	IN	AAAA	301:2522::53\ndns2.myip	300	IN	AAAA	301:2923::53\ndns3.myip	300	IN	AAAA	300:4523::53\ndns4.myip	300	IN	AAAA	303:8b1a::53\ntest1.myip	300	IN	AAAA	300::1\ntest2.myip	300	IN	AAAA	300::2\ntest3.myip	300	IN	AAAA	300::3\ntest4.myip	300	IN	AAAA	300::4');
 INSERT INTO `domains` VALUES ('nc.redwoodanarchysts.ygg','200:3643:3949:25d5:6189:b6c8:bbcb:43a4',NULL,0,1585849638,0,NULL,'nc.redwoodanarchysts.ygg.	3600	IN	AAAA	200:3643:3949:25d5:6189:b6c8:bbcb:43a4');
 INSERT INTO `domains` VALUES ('nc.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1574614178,0,NULL,'nc	300	IN	AAAA	201:2923::6d6:1df0:2970:d382');
