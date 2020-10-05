@@ -38,6 +38,7 @@ INSERT INTO `domains` VALUES ('flibusta.ygg','204:4738:37c6:d295:1b34:2722:62dd:
 INSERT INTO `domains` VALUES ('flying-squid.ygg','204:4ba9::a42c:255d:1fc2:e52b',NULL,0,1593189036,0,NULL,'flying-squid.ygg.	3600	IN	AAAA	204:4ba9::a42c:255d:1fc2:e52b');
 INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'forum-ru	300	IN	AAAA	200:529f:150c:eafe:4405:93fe:8d76:39cb');
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
+INSERT INTO `domains` VALUES ('game.ygg','226:ec93:4ded:bac0:579d:1614:9e8b:7d1b',NULL,0,1601888583,0,NULL,'minecraft.game	300	IN	AAAA	326:ec93:4ded:bac0::af');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	21600	IN	CNAME	git.i2pd.xyz');
 INSERT INTO `domains` VALUES ('haseul.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'haseul	86400	IN	AAAA	228:e140:b0bc:d538:1a7a:5d1e:6a29:1591');
 INSERT INTO `domains` VALUES ('hash.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589726996,0,NULL,'hash.ygg.	3600	IN	AAAA	300:b24b::69');
