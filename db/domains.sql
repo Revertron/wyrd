@@ -64,6 +64,7 @@ INSERT INTO `domains` VALUES ('matrix.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf9
 INSERT INTO `domains` VALUES ('mattermost.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589720538,0,NULL,'mattermost.ygg.	3600	IN	AAAA	300:b24b::69');
 INSERT INTO `domains` VALUES ('mesh.ygg','203:60d4:3d32:a2b9:9eea:1c61:7def:a6bc',NULL,0,0,0,NULL,'mesh	IN	AAAA	303:60d4:3d32:a2b9::4');
 INSERT INTO `domains` VALUES ('meshirc.ygg','201:870:9573:4095:f4e6:dfde:cc68:c783',NULL,1,0,0,NULL,'meshirc	IN	AAAA	201:870:9573:4095:f4e6:dfde:cc68:c783');
+INSERT INTO `domains` VALUES ('microfortress.ygg','200:4f7f:763:20f:c7aa:4155:3180:1820',NULL,0,1602258729,0,NULL,'microfortress.ygg.	3600	IN	AAAA	200:4f7f:763:20f:c7aa:4155:3180:1820');
 INSERT INTO `domains` VALUES ('minecraft.ygg','202:baed:9808:83c8:738:4041:bd8b:8c1d',NULL,1,0,0,NULL,'minecraft	IN	AAAA	202:baed:9808:83c8:738:4041:bd8b:8c1d');
 INSERT INTO `domains` VALUES ('minecraft511.ygg','200:956:775:584:e409:8cc8:1f69:4a95',NULL,0,1588958336,0,NULL,'minecraft511.ygg.	3600	IN	AAAA	200:956:775:584:e409:8cc8:1f69:4a95');
 INSERT INTO `domains` VALUES ('minein.ygg','204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e',NULL,0,1596828429,0,NULL,'minein.ygg.	3600	IN	AAAA	204:b0f6:31bd:8364:14c3:e0ed:5489:1a5e');
