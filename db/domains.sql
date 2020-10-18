@@ -22,6 +22,7 @@ INSERT INTO `domains` VALUES ('casino.ygg','200:bdfc::fcba:9785:4760:6989',NULL,
 INSERT INTO `domains` VALUES ('cathugger.ygg','201:4806:21d5:c971:407f:4ea9:4d7d:e491',NULL,0,1590844001,0,NULL,'cathugger	300	IN	NS	ns1.cathugger.ygg\nns1.cathugger	300	IN	AAAA	201:4806:21d5:c971:407f:4ea9:4d7d:e491');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
 INSERT INTO `domains` VALUES ('coffee-cms.ygg','201:92ca:1113:af5a:3068:ef27:c0a8:19fa',NULL,0,1595113829,0,NULL,'coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa\nsoc.coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa');
+INSERT INTO `domains` VALUES ('coffee.ygg','202:3ff1:133c:b29c:a347:5918:56e2:31a3',NULL,0,1603049063,0,NULL,'coffee	3600	IN	AAAA	202:3ff1:133c:b29c:a347:5918:56e2:31a3');
 INSERT INTO `domains` VALUES ('cypress.ygg','201:a434:84d2:eefc:c555:cd4:ab24:211d',NULL,0,1602054593,0,NULL,'cypress.ygg.	3600	IN	AAAA	201:a434:84d2:eefc:c555:cd4:ab24:211d');
 INSERT INTO `domains` VALUES ('dankchat.ygg','203:d6b4:6d3d:fbef:a557:5a6:c1b0:7a9d',NULL,0,1598586053,0,NULL,'dankchat.ygg.	3600	IN	AAAA	203:d6b4:6d3d:fbef:a557:5a6:c1b0:7a9d');
 INSERT INTO `domains` VALUES ('dark.ygg','218:999c:60c:e211:251f:bc5a:95a3:4892',NULL,0,1591060031,0,NULL,'dark.ygg.	3600	IN	AAAA	218:999c:60c:e211:251f:bc5a:95a3:4892');
