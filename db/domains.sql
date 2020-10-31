@@ -13,6 +13,7 @@ CREATE TABLE `domains` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 INSERT INTO `domains` VALUES ('0chan.ygg','225:55:9ebf:1709:7b1f:a315:1119:6eff',NULL,0,1589052783,0,NULL,'0chan	300	IN	AAAA	225:55:9ebf:1709:7b1f:a315:1119:6eff\ns01.0chan	300	IN	AAAA	225:55:9ebf:1709:7b1f:a315:1119:6eff');
+INSERT INTO `domains` VALUES ('314n.ygg','209:314:e23b:225b:3430:6e6a:e490:fb13',NULL,0,1604149984,0,NULL,'314n.ygg.	3600	IN	AAAA	209:314:e23b:225b::');
 INSERT INTO `domains` VALUES ('489ab.ygg','21e:badd:af9a:cde0:c89d:2bdd:7571:63a2',NULL,0,1575129654,0,NULL,'489ab.ygg.	3600	IN	AAAA	21e:badd:af9a:cde0:c89d:2bdd:7571:63a2');
 INSERT INTO `domains` VALUES ('acetone.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1597923834,0,NULL,'acetone.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::ace');
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
