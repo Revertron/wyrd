@@ -16,6 +16,7 @@ INSERT INTO `domains` VALUES ('0chan.ygg','225:55:9ebf:1709:7b1f:a315:1119:6eff'
 INSERT INTO `domains` VALUES ('314n.ygg','209:314:e23b:225b:3430:6e6a:e490:fb13',NULL,0,1604149984,0,NULL,'314n.ygg.	3600	IN	AAAA	309:314:e23b:225b::');
 INSERT INTO `domains` VALUES ('489ab.ygg','21e:badd:af9a:cde0:c89d:2bdd:7571:63a2',NULL,0,1575129654,0,NULL,'489ab.ygg.	3600	IN	AAAA	21e:badd:af9a:cde0:c89d:2bdd:7571:63a2');
 INSERT INTO `domains` VALUES ('acetone.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1597923834,0,NULL,'acetone.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::ace');
+INSERT INTO `domains` VALUES ('bedrock.ygg','200:2674:f513:e4a2:154c:9285:ae6b:f163',NULL,0,1604232767,0,NULL,'bedrock	300	IN	AAAA	300:2674:f513:e4a2::1');
 INSERT INTO `domains` VALUES ('bolshevik.ygg','221:6e61:e246:d341:b5d0:6df7:4b46:82d5',NULL,0,1573595315,0,NULL,'bolshevik.ygg.	3600	IN	AAAA	221:6e61:e246:d341:b5d0:6df7:4b46:82d5');
 INSERT INTO `domains` VALUES ('c0fe.ygg','200:75fb:a075:b9b7:d1b8:8f35:83b5:c0fe',NULL,0,1599533177,0,NULL,'c0fe.ygg.	3600	IN	AAAA	200:75fb:a075:b9b7:d1b8:8f35:83b5:c0fe');
 INSERT INTO `domains` VALUES ('cadaver.ygg','202:ea1a:68ce:cb93:b375:ce86:8581:afc',NULL,0,1589326952,0,NULL,'cadaver.ygg.	3600	IN	AAAA	302:ea1a:68ce:cb93::dead');
