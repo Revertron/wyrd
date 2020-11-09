@@ -119,7 +119,7 @@ INSERT INTO `domains` VALUES ('torrent-tracker.ygg','201:4541:2f84:1188:59ab:e8d
 INSERT INTO `domains` VALUES ('transmission.ygg','200:a0c1:5204:9f99:807d:d4cd:6698:98a3',NULL,1,0,0,NULL,'transmission	IN	AAAA	200:a0c1:5204:9f99:807d:d4cd:6698:98a3');
 INSERT INTO `domains` VALUES ('tube.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572560526,0,NULL,'tube	300	IN	AAAA	201:2923::6d6:1df0:2970:d382');
 INSERT INTO `domains` VALUES ('umbrellix.ygg','202:8fb5:1490:594d:7e29:98fd:8d79:953f',NULL,1,0,0,NULL,'umbrellix	IN	AAAA	202:8fb5:1490:594d:7e29:98fd:8d79:953f');
-INSERT INTO `domains` VALUES ('vorkunov.ygg','200:ed06:e95c:35cd:f195:56a:8672:d263',NULL,0,1604934093,0,NULL,'*.vorkunov	300	IN	AAAA	200:ed06:e95c:35cd:f195:56a:8672:d263');
+INSERT INTO `domains` VALUES ('vorkunov.ygg','200:ed06:e95c:35cd:f195:56a:8672:d263',NULL,0,1604934093,0,NULL,'vorkunov	300	IN	AAAA	200:ed06:e95c:35cd:f195:56a:8672:d263');
 INSERT INTO `domains` VALUES ('wcii.ygg','202:f405:c8e9:8380:2b83:580c:8ec:6fa',NULL,0,1603984726,0,NULL,'wcii.ygg.	3600	IN	AAAA	202:f405:c8e9:8380:2b83:580c:8ec:6fa');
 INSERT INTO `domains` VALUES ('wekan.ygg','201:424a:3537:d340:6665:daaa:4918:2181',NULL,1,0,0,NULL,'wekan	IN	AAAA	201:424a:3537:d340:6665:daaa:4918:2181');
 INSERT INTO `domains` VALUES ('wiki.ygg','203:e0b0:ec08:4e1f:f004:19a9:577a:90ba',NULL,1,0,0,NULL,'wiki	IN	AAAA	203:e0b0:ec08:4e1f:f004:19a9:577a:90ba');
