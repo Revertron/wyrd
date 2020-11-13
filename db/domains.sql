@@ -117,6 +117,7 @@ INSERT INTO `domains` VALUES ('theoph.ygg','200:75fb:a075:b9b7:d1b8:8f35:83b5:c0
 INSERT INTO `domains` VALUES ('tor-bridge.ygg','223:f05:3dee:526c:d4ec:e65c:457b:7fcf',NULL,1,0,0,NULL,'tor-bridge	IN	AAAA	223:f05:3dee:526c:d4ec:e65c:457b:7fcf');
 INSERT INTO `domains` VALUES ('torrent-tracker.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'torrent-tracker	IN	AAAA	301:4541:2f84:1188:216:3eff:fe34:ec44');
 INSERT INTO `domains` VALUES ('transmission.ygg','200:a0c1:5204:9f99:807d:d4cd:6698:98a3',NULL,1,0,0,NULL,'transmission	IN	AAAA	200:a0c1:5204:9f99:807d:d4cd:6698:98a3');
+INSERT INTO `domains` VALUES ('tsr.ygg','207:6e62:6b65:494e:4eef:7b2:7677:2ff0',NULL,0,1605269300,0,NULL,'tsr.ygg.	3600	IN	AAAA	207:6e62:6b65:494e:4eef:7b2:7677:2ff0');
 INSERT INTO `domains` VALUES ('tube.ygg','201:2923::6d6:1df0:2970:d382',NULL,0,1572560526,0,NULL,'tube	300	IN	AAAA	201:2923::6d6:1df0:2970:d382');
 INSERT INTO `domains` VALUES ('umbrellix.ygg','202:8fb5:1490:594d:7e29:98fd:8d79:953f',NULL,1,0,0,NULL,'umbrellix	IN	AAAA	202:8fb5:1490:594d:7e29:98fd:8d79:953f');
 INSERT INTO `domains` VALUES ('vorkunov.ygg','200:ed06:e95c:35cd:f195:56a:8672:d263',NULL,0,1604934093,0,NULL,'vorkunov	300	IN	AAAA	200:ed06:e95c:35cd:f195:56a:8672:d263');
