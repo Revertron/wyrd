@@ -87,6 +87,7 @@ INSERT INTO `domains` VALUES ('nnmclub.ygg','204:4738:37c6:d295:1b34:2722:62dd:e
 INSERT INTO `domains` VALUES ('nntp.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,1,0,0,NULL,'nntp	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
 INSERT INTO `domains` VALUES ('nodelist.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:b66f',NULL,0,1578320308,0,NULL,'nodelist	600	IN	AAAA	31a:fb8a:c43e:ca59::2');
 INSERT INTO `domains` VALUES ('oauth.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:b66f',NULL,0,1579181149,0,NULL,'oauth	600	IN	AAAA	31a:fb8a:c43e:ca59::3\n*.oauth	600	IN	AAAA	31a:fb8a:c43e:ca59::3');
+INSERT INTO `domains` VALUES ('oiboi.ygg','203:f927:3c42:2b7c:38cf:7ce2:88c0:33d5',NULL,0,1606576086,0,NULL,'oiboi.ygg.	3600	IN	AAAA	203:f927:3c42:2b7c:38cf:7ce2:88c0:33d5');
 INSERT INTO `domains` VALUES ('omega9.ygg','200:6494:5ba3:4570:bde9:ae67:9b0f:b78a',NULL,0,1574721529,0,NULL,'omega9.ygg.	3600	IN	AAAA	200:6494:5ba3:4570:bde9:ae67:9b0f:b78a');
 INSERT INTO `domains` VALUES ('opennic.ygg','200:c493:950a:d576:a413:faef:990b:fb76',NULL,1,0,0,NULL,'opennic	IN	AAAA	200:c493:950a:d576:a413:faef:990b:fb76');
 INSERT INTO `domains` VALUES ('osmarks.ygg','207:1473:146:ae77:a3be:d39f:8e59:d256',NULL,0,1594146087,0,NULL,'osmarks.ygg.	3600	IN	AAAA	207:1473:146:ae77:a3be:d39f:8e59:d256');
