@@ -23,7 +23,7 @@ INSERT INTO `domains` VALUES ('cadaver.ygg','202:ea1a:68ce:cb93:b375:ce86:8581:a
 INSERT INTO `domains` VALUES ('casino.ygg','200:bdfc::fcba:9785:4760:6989',NULL,0,1588694640,0,NULL,'casino	300	IN	AAAA	300:bdfc::');
 INSERT INTO `domains` VALUES ('cathugger.ygg','201:4806:21d5:c971:407f:4ea9:4d7d:e491',NULL,0,1590844001,0,NULL,'cathugger	300	IN	NS	ns1.cathugger.ygg\nns1.cathugger	300	IN	AAAA	201:4806:21d5:c971:407f:4ea9:4d7d:e491');
 INSERT INTO `domains` VALUES ('chelyabinsk.ygg','201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b',NULL,0,1572364588,0,NULL,'chelyabinsk	300	IN	AAAA	201:9316:3c04:f29:d5aa:20a0:c5ee:bc0b');
-INSERT INTO `domains` VALUES ('chuu.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1604934093,0,NULL,'chuu	86400	IN	AAAA	328:e140:b0bc:d538::4');
+INSERT INTO `domains` VALUES ('chuu.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1604934093,0,NULL,'chuu	86400	IN	CNAME	tdemin.ygg');
 INSERT INTO `domains` VALUES ('coffee-cms.ygg','201:92ca:1113:af5a:3068:ef27:c0a8:19fa',NULL,0,1595113829,0,NULL,'coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa\nsoc.coffee-cms	3600	IN	AAAA	201:92ca:1113:af5a:3068:ef27:c0a8:19fa');
 INSERT INTO `domains` VALUES ('coffee.ygg','202:3ff1:133c:b29c:a347:5918:56e2:31a3',NULL,0,1603049063,0,NULL,'coffee	3600	IN	AAAA	202:3ff1:133c:b29c:a347:5918:56e2:31a3');
 INSERT INTO `domains` VALUES ('cypress.ygg','201:a434:84d2:eefc:c555:cd4:ab24:211d',NULL,0,1602054593,0,NULL,'cypress.ygg.	3600	IN	AAAA	201:a434:84d2:eefc:c555:cd4:ab24:211d');
@@ -45,9 +45,9 @@ INSERT INTO `domains` VALUES ('forum-ru.ygg','200:529f:150c:eafe:4405:93fe:8d76:
 INSERT INTO `domains` VALUES ('fz.ygg','201:918e:f16:bd05:e1f4:7435:7182:42d5',NULL,1,0,0,NULL,'fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5\r\nirc.fz	IN	AAAA	201:918e:f16:bd05:e1f4:7435:7182:42d5');
 INSERT INTO `domains` VALUES ('game.ygg','226:ec93:4ded:bac0:579d:1614:9e8b:7d1b',NULL,0,1601888583,0,NULL,'freeciv.game	300	IN	AAAA	326:ec93:4ded:bac0::dead');
 INSERT INTO `domains` VALUES ('gitlab.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'gitlab	21600	IN	CNAME	git.i2pd.xyz');
-INSERT INTO `domains` VALUES ('haseul.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'haseul	86400	IN	AAAA	328:e140:b0bc:d538::2');
+INSERT INTO `domains` VALUES ('haseul.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'haseul	86400	IN	CNAME	tdemin.ygg');
 INSERT INTO `domains` VALUES ('hash.ygg','200:b24b::4088:817b:90a7:6093',NULL,0,1589726996,0,NULL,'hash.ygg.	3600	IN	AAAA	300:b24b::69');
-INSERT INTO `domains` VALUES ('heejin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1607720658,0,NULL,'heejin	86400	IN	AAAA	328:e140:b0bc:d538::5');
+INSERT INTO `domains` VALUES ('heejin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1607720658,0,NULL,'heejin	86400	IN	CNAME	tdemin.ygg');
 INSERT INTO `domains` VALUES ('howto.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1590484698,0,NULL,'howto.ygg.	3600	IN	AAAA	300:529f:150c:eafe::6');
 INSERT INTO `domains` VALUES ('i2pd.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'i2pd	21600	IN	AAAA	304:4738:37c6:d295::1\ncloud.i2pd	21600	IN	AAAA	304:4738:37c6:d295::2\noffice.cloud.i2pd	21600	IN	AAAA	304:4738:37c6:d295::6\nrepo.i2pd	21600	IN	AAAA	304:4738:37c6:d295::4\ngit.i2pd	21600	IN	AAAA	31a:fb8a:c43e:ca59::4');
 INSERT INTO `domains` VALUES ('icychkn.ygg','207:65b7:b35f:34b1:cd46:eec3:4413:d287',NULL,0,1588214714,0,NULL,'icychkn	900	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287\nsearx.icychkn	1800	IN	AAAA	207:65b7:b35f:34b1:cd46:eec3:4413:d287');
@@ -113,7 +113,7 @@ INSERT INTO `domains` VALUES ('speedtest.ygg','201:424c:a9d8:5d69:f3b0:61ef:f201
 INSERT INTO `domains` VALUES ('start.ygg','200:34db:aa3:8b93:b5e7:19e3:b0e6:5988',NULL,0,1589401705,0,NULL,'start.ygg.	3600	IN	AAAA	200:34db:aa3:8b93:b5e7:19e3:b0e6:5988');
 INSERT INTO `domains` VALUES ('static-map.ygg','201:4541:2f84:1188:59ab:e8dd:48a8:d40c',NULL,0,0,0,NULL,'static-map	IN	AAAA	301:4541:2f84:1188:216:3eff:feb6:65a3');
 INSERT INTO `domains` VALUES ('strannik-j.ygg','200:37dc:9ff1:ac4f:76e3:b0cc:40f:fc00',NULL,0,1599055518,0,NULL,'strannik-j.ygg.	3600	IN	AAAA	202:b734:d011:567e:49f6:b155:8577:dedb');
-INSERT INTO `domains` VALUES ('tdemin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'tdemin	86400	IN	CNAME	tdem.in.\nhaseul.tdemin	86400	IN	AAAA	328:e140:b0bc:d538::2\nchuu.tdemin	86400	IN	AAAA	328:e140:b0bc:d538::4\nheejin.tdemin	86400	IN	AAAA	328:e140:b0bc:d538::5\nyeojin.tdemin	86400	IN	AAAA	227:fef4:49b1:30b4:9bef:39fe:26b0:d2f2');
+INSERT INTO `domains` VALUES ('tdemin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1598818285,0,NULL,'tdemin	86400	IN	CNAME	tdem.in.');
 INSERT INTO `domains` VALUES ('telegram-proxy.ygg','200:149b::b722:fe09:d31:84a4',NULL,0,1572364588,0,NULL,'telegram-proxy	300	IN	AAAA	200:2962::64cd:7a09:c268:a954\npx.telegram-proxy	120	IN	AAAA	200:2962::64cd:7a09:c268:a954\npx.telegram-proxy	120	IN	AAAA	201:2522::5736:9a6:7dd1:7c95');
 INSERT INTO `domains` VALUES ('tepolli.ygg','201:8538:fde:5d90:2226:c723:5d60:a034',NULL,0,1589280559,0,NULL,'tepolli.ygg.	3600	IN	AAAA	301:8538:fde:5d90::6');
 INSERT INTO `domains` VALUES ('test.ygg','200:2962::64cd:7a09:c268:a954',NULL,0,1572364588,0,NULL,'test	600	IN	AAAA	200:2962::64cd:7a09:c268:a954\n*.test	300	IN	AAAA	200:2962::64cd:7a09:c268:a954\nddd.test	300	IN	AAAA	301:2923::53');
@@ -130,7 +130,7 @@ INSERT INTO `domains` VALUES ('wekan.ygg','201:424a:3537:d340:6665:daaa:4918:218
 INSERT INTO `domains` VALUES ('wiki.ygg','203:e0b0:ec08:4e1f:f004:19a9:577a:90ba',NULL,1,0,0,NULL,'wiki	IN	AAAA	203:e0b0:ec08:4e1f:f004:19a9:577a:90ba');
 INSERT INTO `domains` VALUES ('xmpp.mufi.ygg','200:5065:1ee:968a:dee2:f659:cf93:f4da',NULL,0,1586988334,0,NULL,'xmpp.mufi.ygg.	3600	IN	AAAA	200:5065:1ee:968a:dee2:f659:cf93:f4da');
 INSERT INTO `domains` VALUES ('xn--jor614i.ygg','201:61b2::9ac:e398:a5ad:b875',NULL,0,1600118969,0,NULL,'xn--jor614i.ygg.	3600	IN	AAAA	301:61b2::1');
-INSERT INTO `domains` VALUES ('yeojin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1599078401,0,NULL,'yeojin	86400	IN	AAAA	227:fef4:49b1:30b4:9bef:39fe:26b0:d2f2');
+INSERT INTO `domains` VALUES ('yeojin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:1591',NULL,0,1599078401,0,NULL,'yeojin	86400	IN	CNAME	tdemin.ygg');
 INSERT INTO `domains` VALUES ('yggedit.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1572537126,0,NULL,'yggedit.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::1');
 INSERT INTO `domains` VALUES ('yggy-forum.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1589758002,0,NULL,'yggy-forum.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::2');
 INSERT INTO `domains` VALUES ('yoitz.ygg','204:e74c:728b:2469:8ebb:860f:6db0:c315',NULL,0,1591192182,0,NULL,'yoitz.ygg.	3600	IN	AAAA	204:e74c:728b:2469:8ebb:860f:6db0:c315');
