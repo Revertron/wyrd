@@ -136,4 +136,5 @@ INSERT INTO `domains` VALUES ('yeojin.ygg','228:e140:b0bc:d538:1a7a:5d1e:6a29:15
 INSERT INTO `domains` VALUES ('yggedit.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1572537126,0,NULL,'yggedit.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::1');
 INSERT INTO `domains` VALUES ('yggy-forum.ygg','201:b614:c68e:b27f:dc0e:e8ec:15d0:2eb0',NULL,0,1589758002,0,NULL,'yggy-forum.ygg.	3600	IN	AAAA	301:b614:c68e:b27f::2');
 INSERT INTO `domains` VALUES ('yoitz.ygg','204:e74c:728b:2469:8ebb:860f:6db0:c315',NULL,0,1591192182,0,NULL,'yoitz.ygg.	3600	IN	AAAA	204:e74c:728b:2469:8ebb:860f:6db0:c315');
+INSERT INTO `domains` VALUES ('zawinklym.ygg','200:47d2:d6f0:c638:498d:3de2:78dc:d578',NULL,0,1608735488,0,NULL,'zawinklym.ygg.	3600	IN	AAAA	200:47d2:d6f0:c638:498d:3de2:78dc:d578');
 INSERT INTO `domains` VALUES ('zeronet-public-tracker.ygg','203:5871:3e33:413c:a824:cb7b:2604:92ab',NULL,1,0,0,NULL,'zeronet-public-tracker	IN	AAAA	203:5871:3e33:413c:a824:cb7b:2604:92ab');
