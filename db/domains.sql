@@ -59,6 +59,7 @@ INSERT INTO `domains` VALUES ('iplaymine.ygg','200:956:775:584:e409:8cc8:1f69:4a
 INSERT INTO `domains` VALUES ('irc-ilita.ygg','224:9de3:fea4:f6ac:6d7c:68f5:6c8e:f9a9',NULL,0,1598435374,0,NULL,'irc-ilita.ygg.	3600	IN	AAAA	324:9de3:fea4:f6ac::41');
 INSERT INTO `domains` VALUES ('jeff.ygg','201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2',NULL,0,1577798900,0,NULL,'jeff.ygg.	3600	IN	AAAA	201:8d7e:15e4:7d98:eb31:50d6:d533:d3f2');
 INSERT INTO `domains` VALUES ('kaztorka.ygg','210:ebb2:3e85:de62:a6fb:b8a1:8b5e:8989',NULL,0,1599166419,0,NULL,'kaztorka.ygg.	3600	IN	AAAA	210:ebb2:3e85:de62:a6fb:b8a1:8b5e:8989');
+INSERT INTO `domains` VALUES ('krazer.ygg','200:2725:8d6b:1442:fbc5:3ad9:62e4:5676',NULL,0,1608950491,0,NULL,'krazer	300	IN	AAAA	200:2725:8d6b:1442:fbc5:3ad9:62e4:5676\nwww.krazer	600	IN	AAAA	200:2725:8d6b:1442:fbc5:3ad9:62e4:5676');
 INSERT INTO `domains` VALUES ('lg.ygg','',NULL,1,0,0,NULL,'lg	IN	AAAA	300:5bf2:a7a5:27c7::4');
 INSERT INTO `domains` VALUES ('link-directory.ygg','200:529f:150c:eafe:4405:93fe:8d76:39cb',NULL,0,1572688265,0,NULL,'link-directory.ygg.	3600	IN	AAAA	300:529f:150c:eafe::1');
 INSERT INTO `domains` VALUES ('live.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,0,1578342785,0,NULL,'live.ygg.	3600	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
