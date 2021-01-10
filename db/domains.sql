@@ -86,7 +86,7 @@ INSERT INTO `domains` VALUES ('neko.ygg','200:41e3:a1c6:2a20:6db6:e808:66e:2dff'
 INSERT INTO `domains` VALUES ('netwhood.ygg','202:12a9:e5:4474:d473:82be:16ac:9381',NULL,1,0,0,NULL,'netwhood	IN	AAAA	202:12a9:e5:4474:d473:82be:16ac:9381\r\ngit	IN	AAAA	202:12a9:e5:4474:d473:82be:16ac:9381');
 INSERT INTO `domains` VALUES ('nevlezay.ygg','201:fd1:86e3:521c:85d5:4dd5:f8:fe31',NULL,0,1603090152,0,NULL,'ns1.nevlezay	300	IN	AAAA	301:fd1:86e3:521c::100\nnevlezay	300	IN	NS	ns1.nevlezay.ygg.');
 INSERT INTO `domains` VALUES ('nextcloud.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,0,0,NULL,'nextcloud	IN	AAAA	304:4738:37c6:d295::2\r\noffice	IN	AAAA	304:4738:37c6:d295::6');
-INSERT INTO `domains` VALUES ('nikat.ygg','209:dead:ded:4991:49f3:b6c0:9869:3019',NULL,0,1603927104,0,NULL,'nikat	300	IN	AAAA	309:dead:ded:4991::1994\nntp.nikat	300	IN	AAAA	209:dead:ded:4991:49f3:b6c0:9869:3019\nwww.nikat	300	IN	AAAA	209:dead:ded:4991:49f3:b6c0:9869:3019');
+INSERT INTO `domains` VALUES ('nikat.ygg','209:dead:ded:4991:49f3:b6c0:9869:3019',NULL,0,1603927104,0,NULL,'nikat	300	IN	AAAA	309:dead:ded:4991::1994\nntp.nikat	300	IN	AAAA	209:dead:ded:4991:49f3:b6c0:9869:3019\nwww.nikat	300	IN	AAAA	209:dead:ded:4991:49f3:b6c0:9869:3019\nscan.nikat	300	IN	AAAA	309:dead:ded:4991::1984');
 INSERT INTO `domains` VALUES ('nnmclub.ygg','204:4738:37c6:d295:1b34:2722:62dd:e8de',NULL,0,1576577238,0,NULL,'nnmclub	21600	IN	AAAA	304:4738:37c6:d295::17');
 INSERT INTO `domains` VALUES ('nntp.ygg','201:3ac0:cdc2:126:656b:aca:8b23:9dc7',NULL,1,0,0,NULL,'nntp	IN	AAAA	201:3ac0:cdc2:126:656b:aca:8b23:9dc7');
 INSERT INTO `domains` VALUES ('nodelist.ygg','21a:fb8a:c43e:ca59:c5a1:d79b:e399:b66f',NULL,0,1578320308,0,NULL,'nodelist	600	IN	AAAA	31a:fb8a:c43e:ca59::2');
