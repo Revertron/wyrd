@@ -113,13 +113,15 @@ NodeInfo: {
 Currently only this TLD is supported: `.ygg`. If the community will need some more, we can add some.
 
 ## Installation (if you want to run your instance)
-1. You need to have installed bind9, python3 and python3-mysqldb. For example: `apt-get install bind9 python3 python3-mysqldb`.
+1. You need to have installed bind9, python3 and python3-mysqldb. For example: `apt-get install bind9 python3 python3-mysqldb`
 2. Clone this repository
-3. Create a database `wyrd`, user `wyrd` and give this user all privileges for this DB.
-4. Copy all contains in `bind` directory to `/etc/bind/`
-5. Change a password in `src/config.py`
-6. Run it by `python3 src/crawler.py`
-7. It would be great to add it to the cron, like for every 15 minutes
+3. Create a database `wyrd`, user `wyrd` and give this user all privileges for this DB
+4. Import DB dump from `./db`
+5. Copy all contains in `bind` directory to `/etc/bind/`
+6. Change a password in `./src/config.py`
+7. Check your yggdrasil adminlisten block. It should be tcp://localhost:9001
+8. Run it by `python3 ./src/crawler.py` or `./run.sh & / disown %1`
+9. It would be great to add it to the cron, like for every 15 minutes
 
 ## Synchronization
 You can ask - what if I run it on my server, and get some domain from already ignored squatter, not from legitimate owner?
