@@ -1,7 +1,10 @@
-# Wyrd
+# Wyrd (deprecated)
 Automatic, NodeInfo based DNS implementation for Yggdrasil
 
-Working servers are here:
+This project is deprecated in favor of blockchain based DNS - [ALFIS](https://github.com/Revertron/Alfis), the crawler is stopped forever (no more new domains).
+
+
+Now working servers are here:
 
 | Server IP      | Location                  |
 |:--------------:|:--------------------------|
@@ -10,7 +13,8 @@ Working servers are here:
 |`300:4523::53`  | Duesseldorf, Germany      |
 |`303:8b1a::53`  | Saint Petersburg, Russia  |
 
-Feel free to use :)
+They will be migrated to ALFIS DNS soon.
+
 
 ## Introduction
 If you use Yggdrasil network, then you've thought about new DNS. Not only to convert names to IPs, but use some additional records, that you can't add to `hosts` file, like CNAME, MX or TXT. And the system should be reliable, if someone got one domain, it must maintain it's owner, and not give it to some second guy.
